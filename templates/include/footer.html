@@ -1,0 +1,55 @@
+{% load static %}
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="widget">
+                    <a href="./" class="footer-logo">
+                        <img src="{{setting.logo.url}}" width="150px" alt="Footer Logo"/>
+                    </a>
+                    {{setting.description}}
+                </div>
+                <div class="social">
+                    <div class="social-menu">
+                        <ul class="menu">
+                            <li><a href="http://facebook.com">Facebook</a></li>
+                            <li><a href="http://plus.google.com">Google Plus</a></li>
+                            <li><a href="http://twitter.com">Twitter</a></li>
+                            <li><a href="http://vimeo.com">Vimeo</a></li>
+                            <li><a href="http://youtube.com">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="widget">
+                    <h3 class="widget-title"><span>Информация</span></h3>
+                    <ul class="menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="widget">
+                    <h3 class="widget-title"><span>{{setting.title}}</span></h3>
+                    <div class="textwidget">
+                        <p><i class="fa fa-map-marker"></i> &nbsp; {{setting.address}}</p>
+                        <p><i class="fa fa-phone"></i>  &nbsp; {{setting.phone}}</p>
+                        <p><i class="fa fa-envelope"></i>  &nbsp; <a href="mailto:{{setting.email}}">{{setting.email}}</a></p>
+                        <p><i class="fa fa-fax"></i>  &nbsp; {{setting.phone}}</p>
+                        <p><i class="fa fa-clock-o"></i>  &nbsp; Mon - Sat: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
