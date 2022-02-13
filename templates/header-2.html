@@ -4,8 +4,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<link rel="shortcut icon" href="images/favicon.ico"/>
-		<title>Header 02 &#8211; Building &amp; Construction HTML Theme</title>
+		<link rel="shortcut icon" href="{{setting.logo}}"/>
+		<title>{{setting.title}}</title>
 
 		<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}" type='text/css' media='all' />
 		<link rel='stylesheet' href="{% static 'css/settings.css' %}" type='text/css' media='all' />
@@ -28,307 +28,8 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 	</head>
-
-	<body class="header02">
-		<div id="loading">
-			<div id="loading-center">
-				<div id="loading-center-absolute">
-					<div class="loader">Loading...</div>
-				</div>
-			</div> 
-		</div>
-		<div class="snap-drawers">
-			<div class="snap-drawer snap-drawer-left">
-				<div class="mobile-menu">
-					<ul class="menu">
-						<li>
-							<a href="./">Home</a>
-							<ul class="sub-menu">
-								<li><a href="./">Home 01</a></li>
-								<li><a href="index-2.html">Home 02</a></li>
-								<li><a href="index-3.html">Home 03</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Headers</a>
-							<ul class="sub-menu">
-								<li><a href="header-1.html">Header Style 01</a></li>
-								<li><a href="header-2.html">Header Style 02</a></li>
-								<li><a href="header-3.html">Header Style 03</a></li>
-								<li><a href="header-4.html">Header Style 04</a></li>
-								<li><a href="header-5.html">Header Style 05</a></li>
-								<li><a href="header-6.html">Header Style 06</a></li>
-								<li><a href="header-7.html">Header Style 07</a></li>
-								<li><a href="header-8.html">Header Style 08</a></li>
-								<li><a href="header-9.html">Header Style 09</a></li>
-								<li><a href="header-10.html">Header Style 10</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="services.html">Services</a>
-							<ul class="sub-menu">
-								<li><a href="service-detail.html">Service type 1</a></li>
-								<li><a href="service-detail-2.html">Service type 2</a></li>
-								<li><a href="service-detail-3.html">Service type 3</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="projects.html">Projects</a>
-							<ul class="sub-menu">
-								<li><a href="projects-fullscreen.html">Project fullscreen</a></li>
-								<li><a href="projects-3-col.html">Project 3 Columns</a></li>
-								<li><a href="projects-4-col.html">Project 4 Columns</a></li>
-								<li><a href="project-type-1.html">Project type 1</a></li>
-								<li><a href="project-type-2.html">Project type 2</a></li>
-								<li><a href="project-type-3.html">Project type 3</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="about-us.html">About Us</a>
-							<ul class="sub-menu">
-								<li><a href="about-us.html">Our Company</a></li>
-								<li><a href="our-history.html">Our History</a></li>
-								<li><a href="affiliates-partners.html">Affiliates &#038; Partners</a></li>
-								<li><a href="awards.html">Awards</a></li>
-								<li><a href="core-values.html">Core Values</a></li>
-								<li><a href="leadership.html">Leadership</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="news.html">News</a>
-							<ul class="sub-menu">
-								<li><a href="news.html">Blog Style</a></li>
-								<li><a href="grid.html">Grid Style</a></li>
-								<li><a href="mixed.html">Mixed Style</a></li>
-								<li><a href="blog-detail.html">Single News</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="shop.html">Shop</a>
-							<ul class="sub-menu">
-								<li><a href="shop-detail.html">Single Product</a></li>
-								<li><a href="cart.html">Cart</a></li>
-								<li><a href="cart-empty.html">Empty Cart</a></li>
-								<li><a href="wishlist.html">Wishlist</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="job-search.html">Career</a>
-							<ul class="sub-menu">
-								<li><a href="job-search.html">Job Search</a></li>
-								<li><a href="mentor-programs.html">Mentor Programs</a></li>
-								<li><a href="internship-programs.html">Internship Programs</a></li>
-								<li><a href="benefits.html">Benefits</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-							<ul class="sub-menu">
-								<li><a href="contact.html">Contact 1</a></li>
-								<li><a href="contact-2.html">Contact 2</a></li>
-								<li><a href="contact-3.html">Contact 3</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="snap-drawer snap-drawer-right"></div>
-		</div>
-		<div id="page" class="site">
-			<div class="top-area site-top hidden-xs hidden-sm">
-				<div class="container">
-					<div class="row middle">
-						<div class="col-md-6">
-							We Build Structures &amp; Relationships to Last
-						</div>
-						<div class="col-md-6 text-right">
-							<div class="top-menu">
-								<ul id="top-menu" class="menu">
-									<li class="menu-item"><a href="job-search.html">Carrier</a></li>
-									<li class="menu-item"><a href="contact.html">Give Feedback</a></li>
-									<li class="menu-item"><a href="contact-2.html">Contact</a></li>
-								</ul>
-							</div>
-							<div class="social-menu">
-								<ul id="social-menu-top" class="menu">
-									<li><a href="http://facebook.com">Facebook</a></li>
-									<li><a href="http://plus.google.com">Google Plus</a></li>
-									<li><a href="http://twitter.com">Twitter</a></li>
-									<li><a href="http://vimeo.com">Vimeo</a></li>
-									<li><a href="http://youtube.com">Youtube</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<header class="site-header">
-				<div class="site-logo">
-					<div class="container">
-						<div class="row middle">
-							<div class="col-md-2 col-xs-8 site-branding">
-								<a href="./">
-									<img src="{% static 'images/logo.png' %}" alt="Logo"/>
-								</a>
-							</div>
-							<div class="col-xs-2 hidden-md hidden-lg">
-								<i class="fa fa-search search-btn"></i>
-							</div>
-							<div class="col-xs-2 hidden-md hidden-lg end">
-								<i id="open-left" class="fa fa-navicon"></i>
-							</div>
-							<div class="col-md-10 hidden-xs hidden-sm">
-								<div id="header-right">
-									<div class="widget header-right">
-										<div class="row extra-info">
-											<div class="col-md-3"></div>
-											<div class="col-md-4">
-												<i class="fa fa-phone"></i>
-												<h3>1-775-97-377</h3>
-												<span>info@thememove.com</span>
-											</div>
-											<div class="col-md-5">
-												<i class="fa fa-home"></i>
-												<h3>14 Tottenham Court Road</h3>
-												<span>London, England.</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="nav">
-					<nav id="site-navigation" class="main-navigation dark">
-						<div class="top-search">
-							<div class="container">
-								<div class="row middle">
-									<div class="col-md-12">
-										<form>
-											<input type="search" name="s" placeholder="What are you looking for?"/>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="container">
-							<div class="row middle">
-								<div class="col-md-11 hidden-xs hidden-sm nav-left">
-									<div class="primary-menu">
-										<ul class="menu">
-											<li class="menu-item-has-children">
-												<a href="./">Home</a>
-												<ul class="sub-menu">
-													<li><a href="./">Home 01</a></li>
-													<li><a href="index-2.html">Home 02</a></li>
-													<li><a href="index-3.html">Home 03</a></li>
-												</ul>
-											</li>
-											<li class="current-menu-item menu-item-has-children">
-												<a href="#">Headers</a>
-												<ul class="sub-menu">
-													<li><a href="header-1.html">Header Style 01</a></li>
-													<li><a href="header-2.html">Header Style 02</a></li>
-													<li><a href="header-3.html">Header Style 03</a></li>
-													<li><a href="header-4.html">Header Style 04</a></li>
-													<li><a href="header-5.html">Header Style 05</a></li>
-													<li><a href="header-6.html">Header Style 06</a></li>
-													<li><a href="header-7.html">Header Style 07</a></li>
-													<li><a href="header-8.html">Header Style 08</a></li>
-													<li><a href="header-9.html">Header Style 09</a></li>
-													<li><a href="header-10.html">Header Style 10</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="services.html">Services</a>
-												<ul class="sub-menu">
-													<li><a href="service-detail.html">Service type 1</a></li>
-													<li><a href="service-detail-2.html">Service type 2</a></li>
-													<li><a href="service-detail-3.html">Service type 3</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="projects.html">Projects</a>
-												<ul class="sub-menu">
-													<li><a href="projects-fullscreen.html">Project fullscreen</a></li>
-													<li><a href="projects-3-col.html">Project 3 Columns</a></li>
-													<li><a href="projects-4-col.html">Project 4 Columns</a></li>
-													<li><a href="project-type-1.html">Project type 1</a></li>
-													<li><a href="project-type-2.html">Project type 2</a></li>
-													<li><a href="project-type-3.html">Project type 3</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="about-us.html">About Us</a>
-												<ul class="sub-menu">
-													<li><a href="about-us.html">Our Company</a></li>
-													<li><a href="our-history.html">Our History</a></li>
-													<li><a href="affiliates-partners.html">Affiliates &#038; Partners</a></li>
-													<li><a href="awards.html">Awards</a></li>
-													<li><a href="core-values.html">Core Values</a></li>
-													<li><a href="leadership.html">Leadership</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="news.html">News</a>
-												<ul class="sub-menu">
-													<li><a href="news.html">Blog Style</a></li>
-													<li><a href="grid.html">Grid Style</a></li>
-													<li><a href="mixed.html">Mixed Style</a></li>
-													<li><a href="blog-detail.html">Single News</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="shop.html">Shop</a>
-												<ul class="sub-menu">
-													<li><a href="shop-detail.html">Single Product</a></li>
-													<li><a href="cart.html">Cart</a></li>
-													<li><a href="cart-empty.html">Empty Cart</a></li>
-													<li><a href="wishlist.html">Wishlist</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="job-search.html">Career</a>
-												<ul class="sub-menu">
-													<li><a href="job-search.html">Job Search</a></li>
-													<li><a href="mentor-programs.html">Mentor Programs</a></li>
-													<li><a href="internship-programs.html">Internship Programs</a></li>
-													<li><a href="benefits.html">Benefits</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="contact.html">Contact</a>
-												<ul class="sub-menu">
-													<li><a href="contact.html">Contact 1</a></li>
-													<li><a href="contact-2.html">Contact 2</a></li>
-													<li><a href="contact-3.html">Contact 3</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-1 hidden-xs hidden-sm nav-right">
-									<div class="mini-cart">
-										<div class="mini-cart__button">
-											<span class="mini-cart-icon"></span>
-										</div>
-										<div class="widget_shopping_cart_content">
-											<ul class="cart_list product_list_widget">
-												<li class="empty">No products in the cart.</li>
-											</ul>
-										</div>
-									</div>
-									<div class="search-box">
-										<i class="fa fa-search search-btn"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</nav>
-				</div>
-				<!-- #site-navigation -->
-			</header>
+	{% include 'include/navbar.html' %}
+	
 			<div class="site-content">
 				<div class="section">
 					<div class="rev_slider_wrapper fullwidthbanner-container">
@@ -406,7 +107,7 @@
 										 data-splitin="none"
 										 data-splitout="none"
 										 data-responsive_offset="on"
-										 data-end="8540">Beautiful Design &amp; Stunning Quality  
+										 data-end="8540">{{setting.description}}  
 									</div>
 
 									<div class="tp-caption slide-text-2 color-white tp-resizeme"
@@ -427,7 +128,7 @@
 										 data-splitin="none"
 										 data-splitout="none"
 										 data-responsive_offset="on"
-										 data-end="8560">Creating Unparalleled Values 
+										 data-end="8560">{{setting.title}} 
 									</div>
 								</li>
 
