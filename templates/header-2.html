@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
@@ -6,14 +7,14 @@
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 		<title>Header 02 &#8211; Building &amp; Construction HTML Theme</title>
 
-		<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/settings.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
-		<link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/custom.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/preloader.css' type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/settings.css' %}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/font-awesome.min.css' %}" type='text/css' media='all'/>
+		<link rel='stylesheet' href="{% static  'css/prettyPhoto.css'%}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/owl.carousel.css'%}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/style.css'%}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/custom.css' %}"type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/preloader.css'%}" type='text/css' media='all' />
 
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -167,7 +168,7 @@
 						<div class="row middle">
 							<div class="col-md-2 col-xs-8 site-branding">
 								<a href="./">
-									<img src="images/logo.png" alt="Logo"/>
+									<img src="{% static 'images/logo.png' %}" alt="Logo"/>
 								</a>
 							</div>
 							<div class="col-xs-2 hidden-md hidden-lg">
@@ -334,7 +335,7 @@
 						<div id="rev_slider_2" class="rev_slider fullwidthabanner">
 							<ul>
 								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
-									<img src="images/banner/banner_4.jpg"  alt="" 
+									<img src="{% static 'images/banner/banner_4.jpg' %}"  alt="" 
 										 data-bgposition="center top" 
 										 data-kenburns="on" 
 										 data-duration="9000" 
@@ -432,7 +433,7 @@
 
 								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Slide">
 
-									<img src="images/banner/banner_5.jpg" alt="" 
+									<img src="{% static 'images/banner/banner_5.jpg' %}" alt="" 
 										 data-bgposition="center top" 
 										 data-kenburns="on" 
 										 data-duration="9000" 
@@ -529,7 +530,7 @@
 								</li>
 
 								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Slide">
-									<img src="images/banner/banner_6.jpg"  alt="" 
+									<img src="{% static 'images/banner/banner_6.jpg' %}"  alt="" 
 										 data-bgposition="center top" 
 										 data-kenburns="on" 
 										 data-duration="9000" 
@@ -651,7 +652,7 @@
 								<li class="col-md-3 col-sm-6">
 									<div class="service-item">
 										<div class="service-entry-media">
-											<img src="images/services/service_1.jpg" alt="" />
+											<img src="{% static 'images/services/service_1.jpg' %}" alt="" />
 											<div class="service-entry-cover">
 												<div class="service-overlay our-services-container"></div>
 												<div class="our-services-readmore">
@@ -686,7 +687,7 @@
 								<li class="col-md-3 col-sm-6">
 									<div class="service-item">
 										<div class="service-entry-media">
-											<img src="images/services/service_2.jpg" alt="" />
+											<img src="{% static 'images/services/service_2.jpg' %}" alt="" />
 											<div class="service-entry-cover">
 												<div class="service-overlay our-services-container"></div>
 												<div class="our-services-readmore">
@@ -721,7 +722,7 @@
 								<li class="col-md-3 col-sm-6">
 									<div class="service-item">
 										<div class="service-entry-media">
-											<img src="images/services/service_6.jpg" alt="" />
+											<img src="{% static 'images/services/service_6.jpg' %}" alt="" />
 											<div class="service-entry-cover">
 												<div class="service-overlay our-services-container"></div>
 												<div class="our-services-readmore">
@@ -756,7 +757,7 @@
 								<li class="col-md-3 col-sm-6">
 									<div class="service-item">
 										<div class="service-entry-media">
-											<img src="images/services/service_4.jpg" alt="" />
+											<img src="{% static 'images/services/service_4.jpg' %}" alt="" />
 											<div class="service-entry-cover">
 												<div class="service-overlay our-services-container"></div>
 												<div class="our-services-readmore">
@@ -812,7 +813,7 @@
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_1.jpg" alt="" />
+															<img src="{% static 'images/portfolio/portfolio_1.jpg' %}" alt="" />
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
@@ -828,7 +829,7 @@
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_1_l.jpg">
+																	<a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_1_l.jpg' %}">
 																		<i class="fa fa-search"></i>
 																	</a>
 																</div>
@@ -839,7 +840,7 @@
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_2.jpg" alt="" />
+															<img src="{% static 'images/portfolio/portfolio_2.jpg' %}" alt="" />
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
@@ -855,7 +856,7 @@
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_2_l.jpg">
+																	<a data-rel="prettyPhoto" href="{% static '/portfolio/portfolio_2_l.jpg' %}">
 																		<i class="fa fa-search"></i>
 																	</a>
 																</div>
@@ -866,7 +867,7 @@
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_3.jpg" alt="" />
+															<img src="{% static 'images/portfolio/portfolio_3.jpg' %}" alt="" />
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
@@ -882,7 +883,7 @@
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_3_l.jpg">
+																	<a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_3_l.jpg' %}">
 																		<i class="fa fa-search"></i>
 																	</a>
 																</div>
@@ -893,7 +894,7 @@
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_4.jpg" alt="" />
+															<img src="{% static 'images/portfolio/portfolio_4.jpg' %}" alt="" />
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
@@ -909,7 +910,7 @@
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_4_l.jpg">
+																	<a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_4_l.jpg' %}">
 																		<i class="fa fa-search"></i>
 																	</a>
 																</div>
@@ -920,7 +921,7 @@
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_5.jpg" alt="" />
+															<img src="{% static 'images/portfolio/portfolio_5.jpg' %}" alt="" />
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
@@ -936,7 +937,7 @@
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_5_l.jpg">
+																	<a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_5_l.jpg' %}">
 																		<i class="fa fa-search"></i>
 																	</a>
 																</div>
@@ -947,7 +948,7 @@
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_6.jpg" alt="" />
+															<img src="{% static 'images/portfolio/portfolio_6.jpg' %}" alt="" />
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
@@ -963,7 +964,7 @@
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_6_l.jpg">
+																	<a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_6_l.jpg' %}">
 																		<i class="fa fa-search"></i>
 																	</a>
 																</div>
@@ -1003,7 +1004,7 @@
 													“Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_1.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_1.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Ms. Anna Terry</span> 
 												<span class="title">Founder/ CEO of Bulder Ltd.,</span>
@@ -1015,7 +1016,7 @@
 													“We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_2.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_2.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Mr. Frankie Kao</span> 
 												<span class="title">Founder/ CEO of ThemeMove</span>
@@ -1027,7 +1028,7 @@
 													“Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_1.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_1.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Ms. Anna Terry</span> 
 												<span class="title">Founder/ CEO of Bulder Ltd.,</span>
@@ -1039,7 +1040,7 @@
 													“We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_2.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_2.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Mr. Frankie Kao</span> 
 												<span class="title">Founder/ CEO of ThemeMove</span>
@@ -1054,11 +1055,11 @@
 									<ul class="news-list-2">
 										<li class="col-md-6 col-sm-12 mb-2">
 											<div class="news-entry-media">
-												<img src="images/blog/blog_1.jpg" alt="" />
+												<img src="{% static 'images/blog/blog_1.jpg' %}" alt="" />
 												<div class="news-entry-cover">
 													<div class="news-overlay home-blog-container"></div>
 													<div class="home-blog-popup">
-														<a data-rel="prettyPhoto" href="images/blog/blog_1_l.jpg">
+														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_1_l.jpg' %}">
 															<i class="fa fa-search"></i>
 														</a>
 													</div>
@@ -1084,11 +1085,11 @@
 										</li>
 										<li class="col-md-6 col-sm-12 mb-2">
 											<div class="news-entry-media">
-												<img src="images/blog/blog_2.jpg" alt="" />
+												<img src="{% static 'images/blog/blog_2.jpg' %}" alt="" />
 												<div class="news-entry-cover">
 													<div class="news-overlay home-blog-container"></div>
 													<div class="home-blog-popup">
-														<a data-rel="prettyPhoto" href="images/blog/blog_2_l.jpg">
+														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_2_l.jpg' %}">
 															<i class="fa fa-search"></i>
 														</a>
 													</div>
@@ -1114,11 +1115,11 @@
 										</li>
 										<li class="col-md-6 col-sm-12 mb-2">
 											<div class="news-entry-media">
-												<img src="images/blog/blog_3.jpg" alt="" />
+												<img src="{% static 'images/blog/blog_3.jpg' %}" alt="" />
 												<div class="news-entry-cover">
 													<div class="news-overlay home-blog-container"></div>
 													<div class="home-blog-popup">
-														<a data-rel="prettyPhoto" href="images/blog/blog_3_l.jpg">
+														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_3_l.jpg' %}">
 															<i class="fa fa-search"></i>
 														</a>
 													</div>
@@ -1168,7 +1169,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_1.png" alt="" />
+															<img src="{% static 'images/client/client_1.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1181,7 +1182,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_2.png" alt="" />
+															<img src="{% static 'images/client/client_2.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1194,7 +1195,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_3.png" alt="" />
+															<img src="{% static 'images/client/client_3.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1207,7 +1208,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_4.png" alt="" />
+															<img src="{% static 'images/client/client_4.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1220,7 +1221,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_5.png" alt="" />
+															<img src="{% static 'images/client/client_5.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1233,7 +1234,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_6.png" alt="" />
+															<img src="{% static 'images/client/client_6.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1246,7 +1247,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_1.png" alt="" />
+															<img src="{% static 'images/client/client_1.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1271,7 +1272,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="widget">
 								<a href="./" class="footer-logo">
-									<img src="images/footer_logo.png" alt="Footer Logo"/>
+									<img src="{% static 'images/footer_logo.png' %}" alt="Footer Logo"/>
 								</a>
 								Integrity for what we build, the purpose of why we build and the people who inspire us to build. It’s what Builder is built upon, and why our homes are as far from ordinary as the people who live in them.
 							</div>
@@ -1331,26 +1332,26 @@
 		</div>
 		<a class="scrollup"><i class="fa fa-angle-up"></i></a>
 
-		<script type='text/javascript' src='js/jquery.min.js'></script>
-		<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
-		<script type='text/javascript' src='js/bootstrap.min.js'></script>
-		<script type='text/javascript' src='js/jquery.themepunch.tools.min.js'></script>
-		<script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
-		<script type='text/javascript' src='js/snap.min.js'></script>
-		<script type='text/javascript' src='js/owl.carousel.min.js'></script>
-		<script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
-		<script type='text/javascript' src='js/jquery.prettyPhoto.init.min.js'></script>
-		<script type='text/javascript' src='js/jQuery.headroom.min.js'></script>
-		<script type='text/javascript' src='js/headroom.min.js'></script>
-		<script type='text/javascript' src='js/script.js'></script>
+		<script type='text/javascript' src="{% static 'js/jquery.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery-migrate.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.themepunch.tools.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/snap.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.prettyPhoto.init.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jQuery.headroom.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/headroom.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/script.js' %}"></script>
 
-		<script type='text/javascript' src='js/extensions/revolution.extension.video.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.slideanims.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.actions.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.layeranimation.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.kenburn.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.navigation.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.migration.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.parallax.min.js'></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.video.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.actions.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.navigation.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.migration.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.parallax.min.js' %}"></script>
 	</body>
 </html>
