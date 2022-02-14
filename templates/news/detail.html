@@ -1,0 +1,251 @@
+{% extends 'blog-detail.html' %}
+{% load static %}
+{% block content %}
+<div class="site-content">
+    <div class="big-title">
+        <div class="container">
+            <h1 class="entry-title">{{news_detail.title}}</h1>
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="tm_bread_crumb">
+                        <li class="top"><a href="./">Домой</a></li>
+                        <li class="sub tail current">Blog Detail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div class="single single-post">
+                        <div class="hentry">
+                            <div class="post-thumb">
+                                <img width="270" height="180" src="{{ news_detail.image.url }}" alt="" />
+                            </div>
+                            <div class="entry-meta row middle">
+                                <div class="col-sm-8">
+                                    <span class="post-time"><i class="fa fa-clock-o"></i> {{news_detail.created}}</span>
+                                </div>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title">{{ news_detail.title }}</h2>
+                            </div>
+                            <div class="entry-content">
+                                <p>
+                                    {{ news_detail.description }}
+                                </p>
+                            </div>
+                            <!-- .entry-content -->
+                            <div class="row single-post-nav">
+                                <div class="col-md-6 left prev-post">
+                                    <span class="prev-post-text">Previous</span>
+                                    <span class="prev-post-info">
+                                        <img width="60" height="40" src="images/blog/thumb/blog_1.jpg" alt="" />
+                                        <a href="#">The Brands Builders Buy Most</a>
+                                    </span>
+                                </div>
+                                <div class="col-md-6 right next-post">
+                                    <span class="next-post-text">Next</span>
+                                    <span class="next-post-info">
+                                        <img width="60" height="40" src="images/blog/thumb/blog_3.jpg" alt="" />
+                                        <a href="#">House Review: Starter Homes</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="comments" class="comments-area">
+                                <h2 class="comments-title">2 comments</h2>
+                                <ol class="comment-list">
+                                    <li class="comment">
+                                        <div class="comment-wrapper">
+                                            <div class="comment-author">
+                                                <img alt="" src="http://placehold.it/100x100" class="avatar photo" height="100" width="100" />
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="metadata">
+                                                    <cite class="fn"><a href='#'>Admin</a></cite> 
+                                                    <br/>
+                                                    <a href="#">September 2, 2015</a>
+                                                </div>
+                                                <p>
+                                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                                </p>
+                                                <a class='comment-reply-link' href='#'>Reply</a>
+                                            </div>
+                                        </div>
+                                        <ol class="children">
+                                            <li class="comment">
+                                                <div class="comment-wrapper">
+                                                    <div class="comment-author">
+                                                        <img alt="" src="http://placehold.it/100x100" class="avatar photo" height="100" width="100" />
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <div class="metadata">
+                                                            <cite class="fn"><a href='#'>John Doe</a></cite> 
+                                                            <br/>
+                                                            <a href="#">September 2, 2015</a>
+                                                        </div>
+                                                        <p>
+                                                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                                        </p>
+                                                        <a class='comment-reply-link' href='#'>Reply</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="comment">
+                                        <div class="comment-wrapper">
+                                            <div class="comment-author">
+                                                <img alt="" src="http://placehold.it/100x100" class="avatar photo" height="100" width="100" />
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="metadata">
+                                                    <cite class="fn"><a href='#'>Admin</a></cite> 
+                                                    <br/>
+                                                    <a href="#">September 2, 2015</a>
+                                                </div>
+                                                <p>
+                                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                                </p>
+                                                <a class='comment-reply-link' href='#'>Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="comment">
+                                        <div class="comment-wrapper">
+                                            <div class="comment-author">
+                                                <img alt="" src="http://placehold.it/100x100" class="avatar photo" height="100" width="100" />
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="metadata">
+                                                    <cite class="fn"><a href='#'>Admin</a></cite> 
+                                                    <br/>
+                                                    <a href="#">September 2, 2015</a>
+                                                </div>
+                                                <p>
+                                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                                </p>
+                                                <a class='comment-reply-link' href='#'>Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div id="respond" class="comment-respond">
+                                    <h3 class="comment-reply-title">Write a Reply or Comment</h3>
+                                    <form class="comment-form">
+                                        <div class="col-md-12">
+                                            <div class="comment-form-comment">
+                                                <textarea id="comment" placeholder="Comment *" name="comment"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="comment-form-author">
+                                                <input id="author" placeholder="Name *" name="author" type="text" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="comment-form-email">
+                                                <input id="email" placeholder="Email *" name="email" type="text" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="comment-form-url">
+                                                <input id="url" placeholder="Website" name="url" type="text" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="form-submit">
+                                            <input name="submit" type="submit" id="submit" class="submit" value="Submit" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="sidebar">
+                        <div class="widget widget_search">
+                            <form class="search-form">
+                                <input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for:" />
+                                <input type="submit" class="search-submit" value="Search" />
+                            </form>
+                        </div>
+                        <div class="widget">
+                            <h3 class="widget-title">Recent News</h3>
+                            <div class="recent-posts-list">
+                                <div class="recent-posts-thumb">
+                                    <img width="80" height="53" src="images/blog/thumb/blog_1.jpg" alt="" />
+                                </div>
+                                <div class="recent-posts-info">
+                                    <a href="blog-detail.html">House Review: Starter Homes</a>
+                                    July 31, 2015
+                                </div>
+                            </div>
+                            <div class="recent-posts-list">
+                                <div class="recent-posts-thumb">
+                                    <img width="80" height="53" src="images/blog/thumb/blog_2.jpg" alt="" />
+                                </div>
+                                <div class="recent-posts-info">
+                                    <a href="blog-detail.html">9 Reasons To Go Modular</a>
+                                    July 31, 2015
+                                </div>
+                            </div>
+                            <div class="recent-posts-list">
+                                <div class="recent-posts-thumb">
+                                    <img width="80" height="53" src="images/blog/thumb/blog_3.jpg" alt="" />
+                                </div>
+                                <div class="recent-posts-info">
+                                    <a href="blog-detail.html">The Brands Builders Buy Most</a>
+                                    July 31, 2015
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <h3 class="widget-title">Recent Comments</h3>
+                            <ul>
+                                <li class="recentcomments">
+                                    <span class="comment-author-link">
+                                        <a href='#'>John Doe</a>
+                                    </span> on <a href="blog-detail.html">House Review: Starter Homes</a>
+                                </li>
+                                <li class="recentcomments">
+                                    <span class="comment-author-link">
+                                        <a href='#'>Marry Jane</a>
+                                    </span> on <a href="blog-detail.html">House Review: Starter Homes</a>
+                                </li>
+                                <li class="recentcomments">
+                                    <span class="comment-author-link">
+                                        <a href='#'>Admin</a>
+                                    </span> on <a href="blog-detail.html">Speed Bench Drill Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h3 class="widget-title">Archives</h3>
+                            <ul>
+                                <li><a href="#">April 2015</a></li>
+                                <li><a href="#">May 2015</a></li>
+                                <li><a href="#">June 2015</a></li>
+                                <li><a href="#">July 2015</a></li>
+                                <li><a href="#">August 2015</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul>
+                                <li><a href="#">Destination (1)</a></li>
+                                <li><a href="#">Construction (4)</a></li>
+                                <li><a href="#">Landscape (3)</a></li>
+                                <li><a href="#">Company (2)</a></li>
+                                <li><a href="#">Projects (1)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
