@@ -1,5 +1,77 @@
 {% extends 'project-type-3.html' %}
 {% load static %}
 {% block content %}
-
+<div class="site-content">
+    <div class="big-title">
+        <div class="container">
+            <h1 class="entry-title">{{objects_detail.title}}</h1>
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="tm_bread_crumb">
+                        <li class="top"><a href="./">Домой</a></li>
+                        <li class="sub"><a href="#">Объекты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="single-project">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="single-project-description">
+                            <h3 class="heading-title">{{objects_detail.title}}</h3>
+                            <p>
+                                {{ objects_detail.description }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-meta">
+                            <h3 class="heading-title">Детали объекта</h3>
+                            <div class="project-meta__content">
+                                <div class="location">
+                                    <span class="location__title meta-title">Место строительства: </span>
+                                    <span class="location__name meta-value">{{ objects_detail.address }}</span>
+                                </div>
+                                <div class="year-complete">
+                                    <span class="year-complete__title meta-title">Начало строительства: </span>
+                                    <span class="year-complete__name meta-value">{{ objects_detail.start }}</span>
+                                </div>
+                                <div class="year-complete">
+                                    <span class="year-complete__title meta-title">Сдача объекта: </span>
+                                    <span class="year-complete__name meta-value">{{ objects_detail.over }}</span>
+                                </div>
+                                <div class="architect">
+                                    <span class="architect__title meta-title">Этажность: </span>
+                                    <span class="architect__name meta-value">{{ objects_detail.floors }} этажей</span>
+                                </div>
+                                <div class="architect">
+                                    <span class="architect__title meta-title">Цена за кв. метр: </span>
+                                    <span class="architect__name meta-value">{{ objects_detail.price }} $</span>
+                                </div>
+                                <div class="architect">
+                                    <span class="architect__title meta-title">Статус: </span>
+                                    <span class="architect__name meta-value">{{ objects_detail.status }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="project-gallery">
+                        {% for image in objects_detail.object_image.all %}
+                        <div class="col-md-4">
+                            <a href="{{ image.image.url }}" data-rel="prettyPhoto[gallery]">
+                                <img width="570" height="380" src="{{ image.image.url }}" alt="" />
+                            </a>
+                        </div>	
+                        {% endfor %}				
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

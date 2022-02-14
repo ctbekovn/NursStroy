@@ -4,12 +4,12 @@
 <div class="site-content">
     <div class="big-title">
         <div class="container">
-            <h1 class="entry-title">У нас есть 0 объектов</h1>
+            <h1 class="entry-title">У нас есть {{ objects_index.all.count }} объектов</h1>
             <div class="breadcrumb">
                 <div class="container">
                     <ul class="tm_bread_crumb">
                         <li class="top"><a href="./">Домой</a></li>
-                        <li class="sub tail current">Projects 3 Columns</li>
+                        <li class="sub tail current">У нас {{ objects_index.all.count }}</li>
                     </ul>
                 </div>
             </div>
@@ -24,168 +24,43 @@
                         <div class="portfolio-row">
                               <div class="portfolioContainer portfolioContainer-full row" id="da-thumbs">
                                   <ul class="project-masonry">
+                                    {% for object in objects_index %}
                                       <li class="grid-item filter-building our-projects-wrapper col-md-4 col-sm-6 mb-3">
                                           <div class="project-media-cover-wrapper">
                                             <div class="project-entry-media">
-                                                <img src="{% static 'images/portfolio/portfolio_1.jpg' %}" alt="" />
+                                                {% for image in object.object_image.all %}
+                                                {% if forloop.counter == 1 %}
+                                                <img src="{{ image.image.url }}" alt="" />
+                                                {% endif %}
+                                                {% endfor %}
                                             </div>
                                             <div class="project-entry-cover">
                                                 <div class="project-overlay our-projects-container"></div>
                                                 <div class="project-content">
                                                     <div class="our-projects-categories">
-                                                        <a href="#">Building</a>
+                                                        <a href="{% url 'object_detail' object.id %}">{{ object.status }}</a>
                                                     </div>
                                                     <div class="line-clear"></div>
                                                     <div class="our-projects-title">
-                                                        <a href="portfolio-detail.html">
-                                                            White House in London
+                                                        <a href="{% url 'object_detail' object.id %}">
+                                                            {{ object.title }}
                                                         </a>
                                                     </div>
                                                     <div class="line-clear"></div>
                                                     <div class="our-projects-popup">
-                                                        <a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_1_l.jpg' %}">
+                                                        {% for image in object.object_image.all %}
+                                                        {% if forloop.counter == 1 %}
+                                                        <a data-rel="prettyPhoto" href="{{ image.image.url }}">
                                                             <i class="fa fa-search"></i>
                                                         </a>
+                                                        {% endif %}
+                                                        {% endfor %}
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                       </li>
-                                      <li class="grid-item filter-3d-design our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                                        <div class="project-media-cover-wrapper">
-                                            <div class="project-entry-media">
-                                                <img src="{% static 'images/portfolio/portfolio_2.jpg' %}" alt="" />
-                                            </div>
-                                            <div class="project-entry-cover">
-                                                <div class="project-overlay our-projects-container"></div>
-                                                <div class="project-content">
-                                                    <div class="our-projects-categories">
-                                                        <a href="#">3D Design</a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-title">
-                                                        <a href="portfolio-detail.html">
-                                                            White House in Singapore
-                                                        </a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-popup">
-                                                        <a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_2_l.jpg' %}">
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid-item filter-exterior our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                                        <div class="project-media-cover-wrapper">
-                                            <div class="project-entry-media">
-                                                <img src="{% static 'images/portfolio/portfolio_3.jpg' %}" alt="" />
-                                            </div>
-                                            <div class="project-entry-cover">
-                                                <div class="project-overlay our-projects-container"></div>
-                                                <div class="project-content">
-                                                    <div class="our-projects-categories">
-                                                        <a href="#">Exterior</a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-title">
-                                                        <a href="portfolio-detail.html">
-                                                            White House in Paris
-                                                        </a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-popup">
-                                                        <a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_3_l.jpg' %}">
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid-item filter-interior our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                                        <div class="project-media-cover-wrapper">
-                                            <div class="project-entry-media">
-                                                <img src="{% static 'images/portfolio/portfolio_4.jpg' %}" alt="" />
-                                            </div>
-                                            <div class="project-entry-cover">
-                                                <div class="project-overlay our-projects-container"></div>
-                                                <div class="project-content">
-                                                    <div class="our-projects-categories">
-                                                        <a href="#">Interior</a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-title">
-                                                        <a href="portfolio-detail.html">
-                                                            White House in Spain
-                                                        </a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-popup">
-                                                        <a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_4_l.jpg' %}">
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid-item filter-art our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                                        <div class="project-media-cover-wrapper">
-                                            <div class="project-entry-media">
-                                                <img src="{% static 'images/portfolio/portfolio_5.jpg' %}" alt="" />
-                                            </div>
-                                            <div class="project-entry-cover">
-                                                <div class="project-overlay our-projects-container"></div>
-                                                <div class="project-content">
-                                                    <div class="our-projects-categories">
-                                                        <a href="#">Art</a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-title">
-                                                        <a href="portfolio-detail.html">
-                                                            White House in Singapore
-                                                        </a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-popup">
-                                                        <a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_5_l.jpg' %}">
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid-item filter-3d-design our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                                        <div class="project-media-cover-wrapper">
-                                            <div class="project-entry-media">
-                                                <img src="{% static 'images/portfolio/portfolio_6.jpg' %}" alt="" />
-                                            </div>
-                                            <div class="project-entry-cover">
-                                                <div class="project-overlay our-projects-container"></div>
-                                                <div class="project-content">
-                                                    <div class="our-projects-categories">
-                                                        <a href="#">3D Design</a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-title">
-                                                        <a href="{% static 'portfolio-detail.html' %}">
-                                                            White House in London
-                                                        </a>
-                                                    </div>
-                                                    <div class="line-clear"></div>
-                                                    <div class="our-projects-popup">
-                                                        <a data-rel="prettyPhoto" href="{% static 'images/portfolio/portfolio_6_l.jpg' %}">
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
+                                      {% endfor %}
                                   </ul>
                               </div>
                         </div>

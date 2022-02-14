@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<link rel="shortcut icon" href="images/favicon.ico"/>
-		<title>Home 01 &#8211; Building &amp; Construction HTML Theme</title>
+		<link rel="shortcut icon" href="{{setting.logo}}"/>
+		<title>{{setting.title}}</title>
 
-		<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/settings.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
-		<link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/custom.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='css/preloader.css' type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/settings.css' %}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/font-awesome.min.css' %}" type='text/css' media='all'/>
+		<link rel='stylesheet' href="{% static  'css/prettyPhoto.css'%}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/owl.carousel.css'%}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/style.css'%}" type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/custom.css' %}"type='text/css' media='all' />
+		<link rel='stylesheet' href="{% static 'css/preloader.css'%}" type='text/css' media='all' />
 
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -27,290 +28,210 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 	</head>
-
-	<body class="header01">
-		<div id="loading">
-			<div id="loading-center">
-				<div id="loading-center-absolute">
-					<div class="loader">Loading...</div>
-				</div>
-			</div> 
-		</div>
-		<div class="snap-drawers">
-			<div class="snap-drawer snap-drawer-left">
-				<div class="mobile-menu">
-					<ul class="menu">
-						<li>
-							<a href="./">Home</a>
-							<ul class="sub-menu">
-								<li><a href="./">Home 01</a></li>
-								<li><a href="index-2.html">Home 02</a></li>
-								<li><a href="index-3.html">Home 03</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Headers</a>
-							<ul class="sub-menu">
-								<li><a href="header-1.html">Header Style 01</a></li>
-								<li><a href="header-2.html">Header Style 02</a></li>
-								<li><a href="header-3.html">Header Style 03</a></li>
-								<li><a href="header-4.html">Header Style 04</a></li>
-								<li><a href="header-5.html">Header Style 05</a></li>
-								<li><a href="header-6.html">Header Style 06</a></li>
-								<li><a href="header-7.html">Header Style 07</a></li>
-								<li><a href="header-8.html">Header Style 08</a></li>
-								<li><a href="header-9.html">Header Style 09</a></li>
-								<li><a href="header-10.html">Header Style 10</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="services.html">Services</a>
-							<ul class="sub-menu">
-								<li><a href="service-detail.html">Service type 1</a></li>
-								<li><a href="service-detail-2.html">Service type 2</a></li>
-								<li><a href="service-detail-3.html">Service type 3</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="projects.html">Projects</a>
-							<ul class="sub-menu">
-								<li><a href="projects-fullscreen.html">Project fullscreen</a></li>
-								<li><a href="projects-3-col.html">Project 3 Columns</a></li>
-								<li><a href="projects-4-col.html">Project 4 Columns</a></li>
-								<li><a href="project-type-1.html">Project type 1</a></li>
-								<li><a href="project-type-2.html">Project type 2</a></li>
-								<li><a href="project-type-3.html">Project type 3</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="about-us.html">About Us</a>
-							<ul class="sub-menu">
-								<li><a href="about-us.html">Our Company</a></li>
-								<li><a href="our-history.html">Our History</a></li>
-								<li><a href="affiliates-partners.html">Affiliates &#038; Partners</a></li>
-								<li><a href="awards.html">Awards</a></li>
-								<li><a href="core-values.html">Core Values</a></li>
-								<li><a href="leadership.html">Leadership</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="news.html">News</a>
-							<ul class="sub-menu">
-								<li><a href="news.html">Blog Style</a></li>
-								<li><a href="grid.html">Grid Style</a></li>
-								<li><a href="mixed.html">Mixed Style</a></li>
-								<li><a href="blog-detail.html">Single News</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="shop.html">Shop</a>
-							<ul class="sub-menu">
-								<li><a href="shop-detail.html">Single Product</a></li>
-								<li><a href="cart.html">Cart</a></li>
-								<li><a href="cart-empty.html">Empty Cart</a></li>
-								<li><a href="wishlist.html">Wishlist</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="job-search.html">Career</a>
-							<ul class="sub-menu">
-								<li><a href="job-search.html">Job Search</a></li>
-								<li><a href="mentor-programs.html">Mentor Programs</a></li>
-								<li><a href="internship-programs.html">Internship Programs</a></li>
-								<li><a href="benefits.html">Benefits</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-							<ul class="sub-menu">
-								<li><a href="contact.html">Contact 1</a></li>
-								<li><a href="contact-2.html">Contact 2</a></li>
-								<li><a href="contact-3.html">Contact 3</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="snap-drawer snap-drawer-right"></div>
-		</div>
-		<div id="page" class="site">
-			<div class="top-area site-top hidden-xs hidden-sm">
-				<div class="container">
-					<div class="row middle">
-						<div class="col-md-6">
-							We Build Structures &amp; Relationships to Last
-						</div>
-						<div class="col-md-6 text-right">
-							<div class="top-menu">
-								<ul id="top-menu" class="menu">
-									<li class="menu-item"><a href="job-search.html">Carrier</a></li>
-									<li class="menu-item"><a href="contact.html">Give Feedback</a></li>
-									<li class="menu-item"><a href="contact-2.html">Contact</a></li>
-								</ul>
-							</div>
-							<div class="social-menu">
-								<ul id="social-menu-top" class="menu">
-									<li><a href="http://facebook.com">Facebook</a></li>
-									<li><a href="http://plus.google.com">Google Plus</a></li>
-									<li><a href="http://twitter.com">Twitter</a></li>
-									<li><a href="http://vimeo.com">Vimeo</a></li>
-									<li><a href="http://youtube.com">Youtube</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<header class="site-header">
-				<nav id="site-navigation" class="main-navigation">
-					<div class="top-search">
-						<div class="container">
-							<div class="row middle">
-								<div class="col-md-12">
-									<form>
-										<input type="search" name="s" placeholder="What are you looking for?"/>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="main-menu">
-						<div class="container">
-							<div class="row middle">
-								<div class="col-md-2 col-xs-8 site-branding">
-									<a href="./">
-										<img src="images/logo.png" alt="Logo"/>
-									</a>
-								</div>
-								<div class="col-xs-2 hidden-md hidden-lg">
-									<i class="fa fa-search search-btn"></i>
-								</div>
-								<div class="col-xs-2 hidden-md hidden-lg end">
-									<i id="open-left" class="fa fa-navicon"></i>
-								</div>
-								<div class="col-md-9 hidden-xs hidden-sm nav-left">
-									<div class="primary-menu">
-										<ul class="menu">
-											<li class="current-menu-item menu-item-has-children">
-												<a href="./">Home</a>
-												<ul class="sub-menu">
-													<li><a href="./">Home 01</a></li>
-													<li><a href="index-2.html">Home 02</a></li>
-													<li><a href="index-3.html">Home 03</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="#">Headers</a>
-												<ul class="sub-menu">
-													<li><a href="header-1.html">Header Style 01</a></li>
-													<li><a href="header-2.html">Header Style 02</a></li>
-													<li><a href="header-3.html">Header Style 03</a></li>
-													<li><a href="header-4.html">Header Style 04</a></li>
-													<li><a href="header-5.html">Header Style 05</a></li>
-													<li><a href="header-6.html">Header Style 06</a></li>
-													<li><a href="header-7.html">Header Style 07</a></li>
-													<li><a href="header-8.html">Header Style 08</a></li>
-													<li><a href="header-9.html">Header Style 09</a></li>
-													<li><a href="header-10.html">Header Style 10</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="services.html">Services</a>
-												<ul class="sub-menu">
-													<li><a href="service-detail.html">Service type 1</a></li>
-													<li><a href="service-detail-2.html">Service type 2</a></li>
-													<li><a href="service-detail-3.html">Service type 3</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="projects.html">Projects</a>
-												<ul class="sub-menu">
-													<li><a href="projects-fullscreen.html">Project fullscreen</a></li>
-													<li><a href="projects-3-col.html">Project 3 Columns</a></li>
-													<li><a href="projects-4-col.html">Project 4 Columns</a></li>
-													<li><a href="project-type-1.html">Project type 1</a></li>
-													<li><a href="project-type-2.html">Project type 2</a></li>
-													<li><a href="project-type-3.html">Project type 3</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="about-us.html">About Us</a>
-												<ul class="sub-menu">
-													<li><a href="about-us.html">Our Company</a></li>
-													<li><a href="our-history.html">Our History</a></li>
-													<li><a href="affiliates-partners.html">Affiliates &#038; Partners</a></li>
-													<li><a href="awards.html">Awards</a></li>
-													<li><a href="core-values.html">Core Values</a></li>
-													<li><a href="leadership.html">Leadership</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="news.html">News</a>
-												<ul class="sub-menu">
-													<li><a href="news.html">Blog Style</a></li>
-													<li><a href="grid.html">Grid Style</a></li>
-													<li><a href="mixed.html">Mixed Style</a></li>
-													<li><a href="blog-detail.html">Single News</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="shop.html">Shop</a>
-												<ul class="sub-menu">
-													<li><a href="shop-detail.html">Single Product</a></li>
-													<li><a href="cart.html">Cart</a></li>
-													<li><a href="cart-empty.html">Empty Cart</a></li>
-													<li><a href="wishlist.html">Wishlist</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="job-search.html">Career</a>
-												<ul class="sub-menu">
-													<li><a href="job-search.html">Job Search</a></li>
-													<li><a href="mentor-programs.html">Mentor Programs</a></li>
-													<li><a href="internship-programs.html">Internship Programs</a></li>
-													<li><a href="benefits.html">Benefits</a></li>
-												</ul>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="contact.html">Contact</a>
-												<ul class="sub-menu">
-													<li><a href="contact.html">Contact 1</a></li>
-													<li><a href="contact-2.html">Contact 2</a></li>
-													<li><a href="contact-3.html">Contact 3</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-1 hidden-xs hidden-sm nav-right">
-									<div class="mini-cart">
-										<div class="mini-cart__button">
-											<span class="mini-cart-icon"></span>
-										</div>
-										<div class="widget_shopping_cart_content">
-											<ul class="cart_list product_list_widget">
-												<li class="empty">No products in the cart.</li>
-											</ul>
-										</div>
-									</div>
-									<div class="search-box">
-										<i class="fa fa-search search-btn"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</nav>
-				<!-- #site-navigation -->
-			</header>
+	{% include 'include/navbar.html' %}
+		<body>
 			<div class="site-content">
 				<div class="section">
 					<div class="rev_slider_wrapper fullwidthbanner-container">
-						<div id="rev_slider_1" class="rev_slider fullwidthabanner">
+						<div id="rev_slider_2" class="rev_slider fullwidthabanner">
 							<ul>
+								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
+									<img src="{% static 'images/banner/banner_4.jpg' %}"  alt="" 
+										 data-bgposition="center top" 
+										 data-kenburns="on" 
+										 data-duration="9000" 
+										 data-ease="Linear.easeNone" 
+										 data-scalestart="100" 
+										 data-scaleend="110" 
+										 data-rotatestart="0" 
+										 data-rotateend="0" 
+										 data-offsetstart="0 0" 
+										 data-offsetend="0 0" 
+										 class="rev-slidebg" />
+
+									<a 	 class="tp-caption rev-btn rev-btn-3"
+										 href="#" target="_self"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['-76','-80','-80','-80']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['95','60','60','60']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-start="3100"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-actions=''
+										 data-responsive_offset="on"
+										 data-end="8400">SEE ALL FEATURES </a>
+
+									<a 	 class="tp-caption rev-btn rev-btn-4"
+										 href="#" target="_self"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['76','80','80','80']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['95','60','60','60']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-start="3100"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-actions=''
+										 data-responsive_offset="on"
+										 data-end="8400">BUY NOW! </a>
+
+									<div class="tp-caption slide-text-2 color-yellow tp-resizeme"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['0','0','0','0']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['11','-60','-30','-20']"
+										 data-fontsize="['48','48','36','24']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1620;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-mask_in="x:0px;y:0px;"
+										 data-mask_out="x:0;y:0;"
+										 data-start="2160"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-responsive_offset="on"
+										 data-end="8540">{{setting.description}}  
+									</div>
+
+									<div class="tp-caption slide-text-2 color-white tp-resizeme"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['0','0','0','0']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['-55','-60','-100','-60']"
+										 data-fontsize="['48','48','36','24']"
+										 data-color="['rgba(255, 255, 255, 1.00)','rgba(244, 184, 0, 1.00)','rgba(244, 184, 0, 1.00)','rgba(244, 184, 0, 1.00)']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-mask_out="x:0;y:0;"
+										 data-start="1090"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-responsive_offset="on"
+										 data-end="8560">{{setting.title}} 
+									</div>
+								</li>
+
 								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Slide">
-									<!-- MAIN IMAGE -->
-									<img src="images/banner/banner_1.jpg"  alt="" 
+
+									<img src="{% static 'images/banner/banner_5.jpg' %}" alt="" 
+										 data-bgposition="center top" 
+										 data-kenburns="on" 
+										 data-duration="9000" 
+										 data-ease="Linear.easeNone" 
+										 data-scalestart="100" 
+										 data-scaleend="110" 
+										 data-rotatestart="0" 
+										 data-rotateend="0" 
+										 data-offsetstart="0 0" 
+										 data-offsetend="0 0" 
+										 class="rev-slidebg">
+
+									<a 	 class="tp-caption rev-btn rev-btn-3"
+										 href="#" target="_self"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['-76','-80','-80','-80']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['95','60','60','60']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-start="3100"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-actions=''
+										 data-responsive_offset="on"
+										 data-end="8400">SEE ALL FEATURES </a>
+
+									<a 	 class="tp-caption rev-btn rev-btn-4"
+										 href="#" target="_self"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['76','80','80','80']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['95','60','60','60']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-start="3100"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-actions=''
+										 data-responsive_offset="on"
+										 data-end="8400">BUY NOW! </a>
+
+									<div class="tp-caption slide-text-2 color-yellow tp-resizeme"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['0','0','0','0']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['11','-60','-30','-20']"
+										 data-fontsize="['48','48','36','24']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1620;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-mask_in="x:0px;y:0px;"
+										 data-mask_out="x:0;y:0;"
+										 data-start="2160"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-responsive_offset="on"
+										 data-end="8540">Providing Top-notch Technical Support  
+									</div>
+
+									<div class="tp-caption slide-text-2 color-white tp-resizeme"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['0','0','0','0']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['-55','-60','-100','-60']"
+										 data-fontsize="['48','48','36','24']"
+										 data-color="['rgba(255, 255, 255, 1.00)','rgba(244, 184, 0, 1.00)','rgba(244, 184, 0, 1.00)','rgba(244, 184, 0, 1.00)']"
+										 data-width="none"
+										 data-height="none"
+										 data-whitespace="nowrap"
+										 data-transform_idle="o:1;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-mask_out="x:0;y:0;"
+										 data-start="1090"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-responsive_offset="on"
+										 data-end="8560">We Put A Ton Of Effort 
+									</div>
+								</li>
+
+								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Slide">
+									<img src="{% static 'images/banner/banner_6.jpg' %}"  alt="" 
 										 data-bgposition="center top" 
 										 data-kenburns="on" 
 										 data-duration="9000" 
@@ -322,587 +243,86 @@
 										 data-offsetstart="0 0" 
 										 data-offsetend="0 0" 
 										 class="rev-slidebg" />
-									<!-- LAYERS -->
 
-									<div class="tp-caption tp-resizeme" 
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['0','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['135','-130','-130','-128']" 
+									<div class="tp-caption slide-text-2 color-yellow tp-resizeme"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['1','0','0','0']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['-60','-60','-60','-30']"
+										 data-fontsize="['48','48','32','19']"
 										 data-width="none"
 										 data-height="none"
 										 data-whitespace="nowrap"
-										 data-visibility="['on','on','on','off']"
 										 data-transform_idle="o:1;"
-										 data-transform_in="x:right;s:250;e:Power3.easeInOut;"
-										 data-transform_out="x:left;s:300;s:300;"
-										 data-start="800"
-										 data-responsive_offset="on"><img src="images/banner/line_01.png" alt="" /> 
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-mask_out="x:0;y:0;"
+										 data-start="160"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-responsive_offset="on"
+										 data-end="8560">Builder - The Best Construction HTML Template 
 									</div>
 
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','center']" 
+									<div class="tp-caption slide-text-3 tp-resizeme"
+										 data-x="['center','center','center','center']" 
 										 data-hoffset="['-1','0','0','0']"
-										 data-y="['top','middle','middle','middle']" 
-										 data-voffset="['419','150','150','128']" 
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['-2','0','0','0']"
+										 data-fontsize="['18','15','15','12']"
 										 data-width="none"
 										 data-height="none"
 										 data-whitespace="nowrap"
-										 data-visibility="['on','on','on','off']"
 										 data-transform_idle="o:1;"
-										 data-transform_in="x:left;s:250;e:Power3.easeInOut;"
-										 data-transform_out="x:right;s:300;s:300;"
-										 data-start="1000"
-										 data-responsive_offset="on"><img src="images/banner/line_01.png" alt="" /> 
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-mask_out="x:0;y:0;"
+										 data-start="1240"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-responsive_offset="on"
+										 data-end="8400">We penetrate what factors are necessary to build your stunning website. 
 									</div>
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','left']" 
-										 data-hoffset="['375','-250','-250','135']" 
-				 						 data-y="['top','middle','middle','top']" 
-				 						 data-voffset="['0','0','0','0']" 
+									<a 	 class="tp-caption rev-btn rev-btn-3"
+										 href="#" target="_self"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['-76','-80','-80','-80']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['95','60','60','60']"
 										 data-width="none"
 										 data-height="none"
 										 data-whitespace="nowrap"
-										 data-visibility="['on','on','on','off']"
 										 data-transform_idle="o:1;"
-										 data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
-										 data-transform_out="y:top;s:300;s:300;"
-										 data-start="1200"
-										 data-responsive_offset="on"><img src="images/banner/line_02.png" alt="" />
-									</div>
+										 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-start="3100"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-actions=''
+										 data-responsive_offset="on"
+										 data-end="8400">SEE ALL FEATURES </a>
 
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','left']" 
-										 data-hoffset="['890','250','250','635']"
-										 data-y="['top','middle','middle','top']" 
-										 data-voffset="['0','0','0','0']"
+									<a 	 class="tp-caption rev-btn rev-btn-4"
+										 href="#" target="_self"
+										 data-x="['center','center','center','center']" 
+										 data-hoffset="['76','80','80','80']"
+										 data-y="['middle','middle','middle','middle']" 
+										 data-voffset="['95','60','60','60']"
 										 data-width="none"
 										 data-height="none"
 										 data-whitespace="nowrap"
-										 data-visibility="['on','on','on','off']"
 										 data-transform_idle="o:1;"
-										 data-transform_in="y:top;s:250;e:Power3.easeInOut;"
-										 data-transform_out="y:bottom;s:300;s:300;"
-										 data-start="1400"
-										 data-responsive_offset="on"><img src="images/banner/line_02.png" alt="" />
-									</div>
-
-									<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['375','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['135','0','0','0']"
-				 						 data-width="['515','500','500','500']"
-				 						 data-height="['285','280','280','280']"
-				 						 data-whitespace="['normal','nowrap','nowrap','nowrap']"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="1600"
-				 						 data-responsive_offset="on"></div>
-
-				 					<div class="tp-caption slide-text-1 tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['165','-110','-110','-110']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;" 
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">WE BRING YOUR VISION TO LIFE 
-				 					</div>
-
-				 					<div class="tp-caption tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['203','-70','-70','-70']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-responsive_offset="on"><img src="images/banner/line_03.png" alt="" />
-				 					</div>
-
-				 					<div class="tp-caption slide-text-2 tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['216','-40','-40','-40']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">Kich Out Other Trashy Sites 
-				 					</div>
-
-				 					<div class="tp-caption slide-text-2 tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['260','10','10','10']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="1990"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">Builder Is Better 
-				 					</div>
-
-				 					<a   class="tp-caption rev-btn tp-resizeme rev-btn-1"
-				 						 href="#" target="_self"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','-80','-80','-80']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['338','80','80','80']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-				 						 data-style_hover="c:rgba(0, 45, 104, 1.00);bg:rgba(255, 255, 255, 1.00);"
-				 						 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-actions=''
-				 						 data-responsive_offset="on">SEE ALL FEATURES </a>
-
-				 					<a 	 class="tp-caption rev-btn  tp-resizeme rev-btn-2"
-				 						 href="#" target="_self"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['590','80','80','80']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['338','80','80','80']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-				 						 data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 45, 104, 1.00);"
-				 						 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-actions=''
-				 						 data-responsive_offset="on">BUY NOW! </a>
+										 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
+										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										 data-transform_out="auto:auto;s:300;"
+										 data-start="3100"
+										 data-splitin="none"
+										 data-splitout="none"
+										 data-actions=''
+										 data-responsive_offset="on"
+										 data-end="8400">BUY NOW! </a>
 								</li>
-
-								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="8630" data-rotate="0" data-saveperformance="off" data-title="Slide">
-									<img src="images/banner/banner_2.jpg"  alt="" 
-										 data-bgposition="center top" 
-										 data-kenburns="on" 
-										 data-duration="9000" 
-										 data-ease="Linear.easeNone" 
-										 data-scalestart="100" 
-										 data-scaleend="110" 
-										 data-rotatestart="0" 
-										 data-rotateend="0" 
-										 data-offsetstart="0 0" 
-										 data-offsetend="0 0" 
-										 class="rev-slidebg" />
-									<!-- LAYERS -->
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['0','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['135','-130','-130','-128']" 
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="x:right;s:250;e:Power3.easeInOut;"
-										 data-transform_out="x:left;s:300;s:300;"
-										 data-start="800"
-										 data-responsive_offset="on"><img src="images/banner/line_21.png" alt="" /> 
-									</div>
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['0','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['414','150','150','128']" 
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="x:left;s:250;e:Power3.easeInOut;"
-										 data-transform_out="x:right;s:300;s:300;"
-										 data-start="1000"
-										 data-responsive_offset="on"><img src="images/banner/line_21.png" alt="" /> 
-									</div>
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','left']" 
-										 data-hoffset="['375','-250','-250','135']"
-										 data-y="['top','middle','middle','top']" 
-										 data-voffset="['0','0','0','0']"
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
-										 data-transform_out="y:top;s:300;s:300;"
-										 data-start="1200"
-										 data-responsive_offset="on"><img src="images/banner/line_22.png" alt="" />
-									</div>
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','left']" 
-										 data-hoffset="['875','250','250','635']" 
-				 						 data-y="['top','middle','middle','top']" 
-				 						 data-voffset="['0','0','0','0']" 
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="y:top;s:250;e:Power3.easeInOut;"
-										 data-transform_out="y:bottom;s:300;s:300;"
-										 data-start="1400"
-										 data-responsive_offset="on"><img src="images/banner/line_22.png" alt="" />
-									</div>
-
-									<div class="tp-caption tp-shape tp-shapewrapper bg-dark tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['375','0','0','0']"
-										 data-y="['top','middle','middle','middle']" 
-										 data-voffset="['135','0','0','0']"
-										 data-color="['rgba(0, 49, 100, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)']"
-										 data-width="500"
-										 data-height="280"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"
-										 data-transform_out="opacity:0;s:300;s:300;"
-										 data-start="1600"
-										 data-responsive_offset="on"></div>
-
-									<div class="tp-caption slide-text-1 color-white tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['410','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['165','-110','-110','-110']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">GET CREATIVE NOW 
-				 					</div>
-
-				 					<div class="tp-caption tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['204','-70','-70','-70']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-responsive_offset="on"><img src="images/banner/line_03.png" alt="" /> 
-				 					</div>
-
-				 					<div class="tp-caption slide-text-2 color-white tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['216','-40','-40','-40']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">Builder Undoubtedly Builds 
-				 					</div>
-
-				 					<div class="tp-caption slide-text-2 color-white tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['260','10','10','10']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">Your Stunning Website 
-				 					</div>
-
-				 					<a 	 class="tp-caption rev-btn tp-resizeme rev-btn-3"
-				 						 href="#" target="_self"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','-80','-80','-80']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['338','80','80','80']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-				 						 data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 45, 104, 1.00)"
-				 						 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-actions=''
-				 						 data-responsive_offset="on">SEE ALL FEATURES </a>
-
-				 					<a   class="tp-caption rev-btn  tp-resizeme rev-btn-4"
-				 						 href="/contact" target="_self"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['590','80','80','80']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['338','80','80','80']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-				 						 data-style_hover="c:rgba(0, 45, 104, 1.00);bg:rgba(255, 255, 255, 1.00);"
-				 						 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-actions=''
-				 						 data-responsive_offset="on">BUY NOW! </a>
-								</li>
-
-								<li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"  data-title="Slide">
-									<img src="images/banner/banner_3.jpg"  alt="" 
-										 data-bgposition="center top" 
-										 data-kenburns="on" 
-										 data-duration="9000" 
-										 data-ease="Linear.easeNone" 
-										 data-scalestart="100" 
-										 data-scaleend="110" 
-										 data-rotatestart="0" 
-										 data-rotateend="0" 
-										 data-offsetstart="0 0" 
-										 data-offsetend="0 0" 
-										 class="rev-slidebg" />
-									<!-- LAYERS -->
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['0','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['135','-130','-130','-128']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-visibility="['on','on','on','off']"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="x:right;s:250;e:Power3.easeInOut;"
-				 						 data-transform_out="x:left;s:300;s:300;"
-				 						 data-start="800"
-				 						 data-responsive_offset="on"><img src="images/banner/line_31.png" alt="" />
-				 					</div>
-
-				 					<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['0','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['414','150','150','128']" 
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="x:left;s:250;e:Power3.easeInOut;"
-										 data-transform_out="x:right;s:300;s:300;"
-										 data-start="1000"
-										 data-responsive_offset="on"><img src="images/banner/line_31.png" alt="" /> 
-									</div>
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','left']" 
-										 data-hoffset="['375','-250','-250','135']"
-										 data-y="['top','middle','middle','top']" 
-										 data-voffset="['0','0','0','0']"
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
-										 data-transform_out="y:top;s:300;s:300;"
-										 data-start="1200"
-										 data-responsive_offset="on"><img src="images/banner/line_32.png" alt="" />
-									</div>
-
-									<div class="tp-caption tp-resizeme"
-										 data-x="['left','center','center','left']" 
-										 data-hoffset="['875','250','250','635']" 
-				 						 data-y="['top','middle','middle','top']" 
-				 						 data-voffset="['0','0','0','0']" 
-										 data-width="none"
-										 data-height="none"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="y:top;s:250;e:Power3.easeInOut;"
-										 data-transform_out="y:bottom;s:300;s:300;"
-										 data-start="1400"
-										 data-responsive_offset="on"><img src="images/banner/line_32.png" alt="" />
-									</div>
-
-									<div class="tp-caption tp-shape tp-shapewrapper bg-darker tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['375','0','0','0']"
-										 data-y="['top','middle','middle','middle']" 
-										 data-voffset="['135','0','0','0']"
-										 data-color="['rgba(10, 10, 10, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)']"
-										 data-width="500"
-										 data-height="280"
-										 data-whitespace="nowrap"
-										 data-transform_idle="o:1;"
-										 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"
-										 data-transform_out="opacity:0;s:300;s:300;"
-										 data-start="1600"
-										 data-responsive_offset="on"></div>
-
-									<div class="tp-caption slide-text-1 color-white tp-resizeme"
-										 data-x="['left','center','center','center']" 
-										 data-hoffset="['410','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['165','-110','-110','-110']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">WE TAKE CARE OF EVERYTHING 
-				 					</div>
-
-				 					<div class="tp-caption tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['204','-70','-70','-70']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-responsive_offset="on"><img src="images/banner/line_03.png" alt="" /> 
-				 					</div>
-
-				 					<div class="tp-caption slide-text-2 color-white tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['216','-40','-40','-40']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">The Best Construction 
-				 					</div>
-
-				 					<div class="tp-caption slide-text-2 color-white tp-resizeme"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','0','0','0']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['260','10','10','10']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-responsive_offset="on">HTML Template 
-				 					</div>
-
-				 					<a 	 class="tp-caption rev-btn tp-resizeme rev-btn-5"
-				 						 href="#" target="_self"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['410','-80','-80','-80']" 
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['338','80','80','80']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-				 						 data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 0, 0, 1.00)"
-				 						 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-actions=''
-				 						 data-responsive_offset="on">SEE ALL FEATURES </a>
-
-				 					<a   class="tp-caption rev-btn  tp-resizeme rev-btn-4"
-				 						 href="/contact" target="_self"
-				 						 data-x="['left','center','center','center']" 
-				 						 data-hoffset="['590','80','80','80']"
-				 						 data-y="['top','middle','middle','middle']" 
-				 						 data-voffset="['338','80','80','80']"
-				 						 data-width="none"
-				 						 data-height="none"
-				 						 data-whitespace="nowrap"
-				 						 data-transform_idle="o:1;"
-				 						 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-				 						 data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);"
-				 						 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-				 						 data-transform_out="opacity:0;s:300;s:300;"
-				 						 data-start="2000"
-				 						 data-splitin="none"
-				 						 data-splitout="none"
-				 						 data-actions=''
-				 						 data-responsive_offset="on">BUY NOW! </a>
-				 				</li>
 							</ul>
 							<div class="tp-bannertimer"></div>
 						</div>
@@ -929,242 +349,148 @@
 				<div class="section pt-5 pb-3">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-4">
-								<div class="mb-3">
-									<div class="section-title">Our Services</div>
-									<div class="section-desc">
-										<p>
-											Our projects may be diverse but the results are one and the same—on schedule, on budget, with superior quality and safe. It’s a certainty you can count on.
-										</p>
-									</div>
-									<div class="ourservices_btn">
-										<div class="navigationbutton button-left ourservices_btn_left">
-											<i class="fa fa-angle-left"></i>
+							<ul class="service-grid">
+								<li class="col-md-3 col-sm-6">
+									<div class="service-item">
+										<div class="service-entry-media">
+											<img src="{% static 'images/services/service_1.jpg' %}" alt="" />
+											<div class="service-entry-cover">
+												<div class="service-overlay our-services-container"></div>
+												<div class="our-services-readmore">
+													<a class="our-services-readmore-link" href="service-detail.html">
+														READ MORE
+													</a>
+												</div>
+												<div class="our-services-url">
+													<a class="our-services-url-link" href="service-detail.html">
+														<i class="fa fa-external-link"></i>
+													</a>
+												</div>
+											</div>
 										</div>
-										<div class="navigationbutton button-right ourservices_btn_right">
-											<i class="fa fa-angle-right"></i>
+										<div class="our-services-content">
+											<div class="our-services-title">
+												<a class="our-services-title-link" href="service-detail.html">
+													Building Renovation
+												</a>
+											</div>
+											<div class="our-services-desc">
+												Depending on the scope of your project, we design your renovation in-house or partner with Builder ‘s finest architects to design, budget and build.
+											</div>
+											<div class="our-services-readmore-2">
+												<a class="our-services-readmore-link-2" href="service-detail.html">
+													READ MORE
+												</a>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-sm-8">
-								<div class="myportfolio-container minimal-light row">
-									<div class="slider-wrapper">
-										<ul class="service-list">
-											<li class="col-md-6 col-sm-6">
-												<div class="service-item">
-													<div class="service-entry-media">
-														<img src="images/services/service_1.jpg" alt="" />
-														<div class="service-entry-cover">
-															<div class="service-overlay our-services-container"></div>
-															<div class="our-services-readmore">
-																<a class="our-services-readmore-link" href="service-detail.html">
-																	READ MORE
-																</a>
-															</div>
-															<div class="our-services-url">
-																<a class="our-services-url-link" href="service-detail.html">
-																	<i class="fa fa-external-link"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="our-services-content">
-														<div class="our-services-title">
-															<a class="our-services-title-link" href="service-detail.html">
-																Building Renovation
-															</a>
-														</div>
-														<div class="our-services-desc">
-															Depending on the scope of your project, we design your renovation in-house or partner with Builder ‘s finest architects to design, budget and build.
-														</div>
-														<div class="our-services-readmore-2">
-															<a class="our-services-readmore-link-2" href="service-detail.html">
-																READ MORE
-															</a>
-														</div>
-													</div>
+								</li>
+								<li class="col-md-3 col-sm-6">
+									<div class="service-item">
+										<div class="service-entry-media">
+											<img src="{% static 'images/services/service_2.jpg' %}" alt="" />
+											<div class="service-entry-cover">
+												<div class="service-overlay our-services-container"></div>
+												<div class="our-services-readmore">
+													<a class="our-services-readmore-link" href="service-detail.html">
+														READ MORE
+													</a>
 												</div>
-											</li>
-											<li class="col-md-6 col-sm-6">
-												<div class="service-item">
-													<div class="service-entry-media">
-														<img src="images/services/service_2.jpg" alt="" />
-														<div class="service-entry-cover">
-															<div class="service-overlay our-services-container"></div>
-															<div class="our-services-readmore">
-																<a class="our-services-readmore-link" href="service-detail.html">
-																	READ MORE
-																</a>
-															</div>
-															<div class="our-services-url">
-																<a class="our-services-url-link" href="service-detail.html">
-																	<i class="fa fa-external-link"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="our-services-content">
-														<div class="our-services-title">
-															<a class="our-services-title-link" href="service-detail.html">
-																Design &amp; Build Package
-															</a>
-														</div>
-														<div class="our-services-desc">
-															Integrity for what we build, the purpose of why we build. We build a house with the synchronism between design and build package.
-														</div>
-														<div class="our-services-readmore-2">
-															<a class="our-services-readmore-link-2" href="service-detail.html">
-																READ MORE
-															</a>
-														</div>
-													</div>
+												<div class="our-services-url">
+													<a class="our-services-url-link" href="service-detail.html">
+														<i class="fa fa-external-link"></i>
+													</a>
 												</div>
-											</li>
-											<li class="col-md-6 col-sm-6">
-												<div class="service-item">
-													<div class="service-entry-media">
-														<img src="images/services/service_6.jpg" alt="" />
-														<div class="service-entry-cover">
-															<div class="service-overlay our-services-container"></div>
-															<div class="our-services-readmore">
-																<a class="our-services-readmore-link" href="service-detail.html">
-																	READ MORE
-																</a>
-															</div>
-															<div class="our-services-url">
-																<a class="our-services-url-link" href="service-detail.html">
-																	<i class="fa fa-external-link"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="our-services-content">
-														<div class="our-services-title">
-															<a class="our-services-title-link" href="service-detail.html">
-																Preconstruction
-															</a>
-														</div>
-														<div class="our-services-desc">
-															To ensure that the homebuilding process goes smoothly, it's important that both the homebuilder and buyer understand each other's expectations.
-														</div>
-														<div class="our-services-readmore-2">
-															<a class="our-services-readmore-link-2" href="service-detail.html">
-																READ MORE
-															</a>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li class="col-md-6 col-sm-6">
-												<div class="service-item">
-													<div class="service-entry-media">
-														<img src="images/services/service_4.jpg" alt="" />
-														<div class="service-entry-cover">
-															<div class="service-overlay our-services-container"></div>
-															<div class="our-services-readmore">
-																<a class="our-services-readmore-link" href="service-detail.html">
-																	READ MORE
-																</a>
-															</div>
-															<div class="our-services-url">
-																<a class="our-services-url-link" href="service-detail.html">
-																	<i class="fa fa-external-link"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="our-services-content">
-														<div class="our-services-title">
-															<a class="our-services-title-link" href="service-detail.html">
-																Build Services
-															</a>
-														</div>
-														<div class="our-services-desc">
-															Builder's 15 years in design-build with quality contractors has built our best practice solutions to ensure successful project delivery.
-														</div>
-														<div class="our-services-readmore-2">
-															<a class="our-services-readmore-link-2" href="service-detail.html">
-																READ MORE
-															</a>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li class="col-md-6 col-sm-6">
-												<div class="service-item">
-													<div class="service-entry-media">
-														<img src="images/services/service_3.jpg" alt="" />
-														<div class="service-entry-cover">
-															<div class="service-overlay our-services-container"></div>
-															<div class="our-services-readmore">
-																<a class="our-services-readmore-link" href="service-detail.html">
-																	READ MORE
-																</a>
-															</div>
-															<div class="our-services-url">
-																<a class="our-services-url-link" href="service-detail.html">
-																	<i class="fa fa-external-link"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="our-services-content">
-														<div class="our-services-title">
-															<a class="our-services-title-link" href="service-detail.html">
-																House Smart
-															</a>
-														</div>
-														<div class="our-services-desc">
-															How smart is your house? All houses are not designed or built the same. What happens behind the walls, below the floors.
-														</div>
-														<div class="our-services-readmore-2">
-															<a class="our-services-readmore-link-2" href="service-detail.html">
-																READ MORE
-															</a>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li class="col-md-6 col-sm-6">
-												<div class="service-item">
-													<div class="service-entry-media">
-														<img src="images/services/service_5.jpg" alt="" />
-														<div class="service-entry-cover">
-															<div class="service-overlay our-services-container"></div>
-															<div class="our-services-readmore">
-																<a class="our-services-readmore-link" href="service-detail.html">
-																	READ MORE
-																</a>
-															</div>
-															<div class="our-services-url">
-																<a class="our-services-url-link" href="service-detail.html">
-																	<i class="fa fa-external-link"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="our-services-content">
-														<div class="our-services-title">
-															<a class="our-services-title-link" href="service-detail.html">
-																Domestic Builders
-															</a>
-														</div>
-														<div class="our-services-desc">
-															Whilst many people flout the above laws – and have done for many years, consumers are becoming much more aware of the requirement to engage.
-														</div>
-														<div class="our-services-readmore-2">
-															<a class="our-services-readmore-link-2" href="service-detail.html">
-																READ MORE
-															</a>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
+											</div>
+										</div>
+										<div class="our-services-content">
+											<div class="our-services-title">
+												<a class="our-services-title-link" href="service-detail.html">
+													Design &amp; Build Package
+												</a>
+											</div>
+											<div class="our-services-desc">
+												Integrity for what we build, the purpose of why we build. We build a house with the synchronism between design and build package.
+											</div>
+											<div class="our-services-readmore-2">
+												<a class="our-services-readmore-link-2" href="service-detail.html">
+													READ MORE
+												</a>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
+								</li>
+								<li class="col-md-3 col-sm-6">
+									<div class="service-item">
+										<div class="service-entry-media">
+											<img src="{% static 'images/services/service_6.jpg' %}" alt="" />
+											<div class="service-entry-cover">
+												<div class="service-overlay our-services-container"></div>
+												<div class="our-services-readmore">
+													<a class="our-services-readmore-link" href="service-detail.html">
+														READ MORE
+													</a>
+												</div>
+												<div class="our-services-url">
+													<a class="our-services-url-link" href="service-detail.html">
+														<i class="fa fa-external-link"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="our-services-content">
+											<div class="our-services-title">
+												<a class="our-services-title-link" href="service-detail.html">
+													Preconstruction
+												</a>
+											</div>
+											<div class="our-services-desc">
+												To ensure that the homebuilding process goes smoothly, it's important that both the homebuilder and buyer understand each other's expectations.
+											</div>
+											<div class="our-services-readmore-2">
+												<a class="our-services-readmore-link-2" href="service-detail.html">
+													READ MORE
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-3 col-sm-6">
+									<div class="service-item">
+										<div class="service-entry-media">
+											<img src="{% static 'images/services/service_4.jpg' %}" alt="" />
+											<div class="service-entry-cover">
+												<div class="service-overlay our-services-container"></div>
+												<div class="our-services-readmore">
+													<a class="our-services-readmore-link" href="service-detail.html">
+														READ MORE
+													</a>
+												</div>
+												<div class="our-services-url">
+													<a class="our-services-url-link" href="service-detail.html">
+														<i class="fa fa-external-link"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="our-services-content">
+											<div class="our-services-title">
+												<a class="our-services-title-link" href="service-detail.html">
+													Build Services
+												</a>
+											</div>
+											<div class="our-services-desc">
+												Builder's 15 years in design-build with quality contractors has built our best practice solutions to ensure successful project delivery.
+											</div>
+											<div class="our-services-readmore-2">
+												<a class="our-services-readmore-link-2" href="service-detail.html">
+													READ MORE
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -1173,7 +499,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="mb-3 projects_btn">
-									<p>Lastest Projects </p>
+									<p>Последние объекты </p>
 									<div class="navigationbutton button-left projects_btn_left">
 										<i class="fa fa-angle-left"></i>
 									</div>
@@ -1185,213 +511,45 @@
 									<div class="slider-wrapper">
 										<div class="row">
 											<ul class="project-list">
+												{% for object in last_objects %}
 												<li class="our-projects-wrapper col-md-4 col-sm-6">
 													<div class="project-media-cover-wrapper">
 														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_1.jpg" alt="" />
+															{% for image in object.object_image.all %}
+															{% if forloop.counter == 1 %}
+															<img src="{{ image.image.url }}" alt="" />
+															{% endif %}
+															{% endfor %}
 														</div>
 														<div class="project-entry-cover">
 															<div class="project-overlay our-projects-container"></div>
 															<div class="project-content">
 																<div class="our-projects-categories">
-																	<a href="#">Building</a>
+																	<a href="#">{{ object.status }}</a>
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-title">
 																	<a href="portfolio-detail.html">
-																		White House in London
+																		{{ object.title }}
 																	</a>
 																</div>
 																<div class="line-clear"></div>
 																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_1_l.jpg">
+																	{% for image in object.object_image.all %}
+																	{% if forloop.counter == 1 %}
+																	<a data-rel="prettyPhoto" href="{{ image.image.url }}">
 																		<i class="fa fa-search"></i>
 																	</a>
+																	{% endif %}
+																	{% endfor %}
 																</div>
 															</div>
 														</div>
 													</div>
 												</li>
-												<li class="our-projects-wrapper col-md-4 col-sm-6">
-													<div class="project-media-cover-wrapper">
-														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_2.jpg" alt="" />
-														</div>
-														<div class="project-entry-cover">
-															<div class="project-overlay our-projects-container"></div>
-															<div class="project-content">
-																<div class="our-projects-categories">
-																	<a href="#">3D Design</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-title">
-																	<a href="portfolio-detail.html">
-																		White House in Singapore
-																	</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_2_l.jpg">
-																		<i class="fa fa-search"></i>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="our-projects-wrapper col-md-4 col-sm-6">
-													<div class="project-media-cover-wrapper">
-														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_3.jpg" alt="" />
-														</div>
-														<div class="project-entry-cover">
-															<div class="project-overlay our-projects-container"></div>
-															<div class="project-content">
-																<div class="our-projects-categories">
-																	<a href="#">Exterior</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-title">
-																	<a href="portfolio-detail.html">
-																		White House in Paris
-																	</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_3_l.jpg">
-																		<i class="fa fa-search"></i>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="our-projects-wrapper col-md-4 col-sm-6">
-													<div class="project-media-cover-wrapper">
-														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_4.jpg" alt="" />
-														</div>
-														<div class="project-entry-cover">
-															<div class="project-overlay our-projects-container"></div>
-															<div class="project-content">
-																<div class="our-projects-categories">
-																	<a href="#">Interior</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-title">
-																	<a href="portfolio-detail.html">
-																		White House in Spain
-																	</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_4_l.jpg">
-																		<i class="fa fa-search"></i>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="our-projects-wrapper col-md-4 col-sm-6">
-													<div class="project-media-cover-wrapper">
-														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_5.jpg" alt="" />
-														</div>
-														<div class="project-entry-cover">
-															<div class="project-overlay our-projects-container"></div>
-															<div class="project-content">
-																<div class="our-projects-categories">
-																	<a href="#">Art</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-title">
-																	<a href="portfolio-detail.html">
-																		White House in Singapore
-																	</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_5_l.jpg">
-																		<i class="fa fa-search"></i>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="our-projects-wrapper col-md-4 col-sm-6">
-													<div class="project-media-cover-wrapper">
-														<div class="project-entry-media">
-															<img src="images/portfolio/portfolio_6.jpg" alt="" />
-														</div>
-														<div class="project-entry-cover">
-															<div class="project-overlay our-projects-container"></div>
-															<div class="project-content">
-																<div class="our-projects-categories">
-																	<a href="#">3D Design</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-title">
-																	<a href="portfolio-detail.html">
-																		White House in London
-																	</a>
-																</div>
-																<div class="line-clear"></div>
-																<div class="our-projects-popup">
-																	<a data-rel="prettyPhoto" href="images/portfolio/portfolio_6_l.jpg">
-																		<i class="fa fa-search"></i>
-																	</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
+												{% endfor %}
 											</ul>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section pt-5 pb-2 home_whatweare">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="mb-3">
-									<div class="text-center">
-										<img width="370" height="240" src="images/image_1.jpg" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="mb-3">
-									<div class="section-title">What We Are?</div>
-									<div class="section-desc">
-										<p>
-											Builder wants to be your builder for life. Whether we built your home or not, it’s not too late for you to join our family. ReStructure is managed by a staff with over 30 years of renovation experience and supported by the same systems.
-										</p>
-									</div>
-									<div class="home_whatweare_btn">
-										<a href="#">READ MORE</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="mb-3">
-									<div class="consulting">
-										<img src="images/image_2.jpg" alt="" width="370" height="150" />
-										<div class="info">
-											<div>
-												<h4>Get Your</h4>
-												<h5>Free consulting</h5>
-												<a href="#">CLICK HERE! </a>
-											</div>
-										</div>
-									</div>
-									<div class="mt-2">
-										If you are confusing? Do not worry. We offer free consultation to help you make a decision with the best creativity and quality that you deserve.
 									</div>
 								</div>
 							</div>
@@ -1409,181 +567,159 @@
 						</div>
 					</div>
 				</div>
-				<div class="section home_news pt-5 pb-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="mb-3">
-									<div class="section-title">Recent News</div>
-									<div class="section-desc">
-										<p>
-											We provide the latest information about building from around the world. Don’t miss it!
-										</p>
-									</div>
-									<div class="home_news_btn">
-										<a href="#">Read all news</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-9">
-								<div class="myportfolio-container minimal-light mb-3">
-									<div class="row">
-										<div class="slider-wrapper">
-											<ul class="news-list">
-												<li class="col-md-4 col-sm-6">
-													<div class="news-entry-media">
-														<img src="images/blog/blog_1.jpg" alt="" />
-														<div class="news-entry-cover">
-															<div class="news-overlay home-blog-container"></div>
-															<div class="home-blog-popup">
-																<a data-rel="prettyPhoto" href="images/blog/blog_1_l.jpg">
-																	<i class="fa fa-search"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="home-blog-content">
-														<div class="home-blog-title">
-															<a href="blog-detail.html">
-																House Review: Starter Homes
-															</a>
-														</div>
-														<div class="home-blog-date">July 31, 2015</div>
-														<div class="home-blog-comment">2</div>
-														<div class="home-blog-desc">
-															The startling fact that a growing percentage of the population simply cannot afford a...
-														</div>
-														<div class="home-blog-readmore">
-															<a href="blog-detail.html">
-																Read More
-															</a>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-4 col-sm-6">
-													<div class="news-entry-media">
-														<img src="images/blog/blog_2.jpg" alt="" />
-														<div class="news-entry-cover">
-															<div class="news-overlay home-blog-container"></div>
-															<div class="home-blog-popup">
-																<a data-rel="prettyPhoto" href="images/blog/blog_2_l.jpg">
-																	<i class="fa fa-search"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="home-blog-content">
-														<div class="home-blog-title">
-															<a href="blog-detail.html">
-																9 Reasons To Go Modular
-															</a>
-														</div>
-														<div class="home-blog-date">July 31, 2015</div>
-														<div class="home-blog-comment">2</div>
-														<div class="home-blog-desc">
-															With today's technology, modular homes can be built in any style, and completion time...
-														</div>
-														<div class="home-blog-readmore">
-															<a href="blog-detail.html">
-																Read More
-															</a>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-4 col-sm-6">
-													<div class="news-entry-media">
-														<img src="images/blog/blog_3.jpg" alt="" />
-														<div class="news-entry-cover">
-															<div class="news-overlay home-blog-container"></div>
-															<div class="home-blog-popup">
-																<a data-rel="prettyPhoto" href="images/blog/blog_3_l.jpg">
-																	<i class="fa fa-search"></i>
-																</a>
-															</div>
-														</div>
-													</div>
-													<div class="home-blog-content">
-														<div class="home-blog-title">
-															<a href="blog-detail.html">
-																The Brands Builders Buy Most
-															</a>
-														</div>
-														<div class="home-blog-date">July 31, 2015</div>
-														<div class="home-blog-comment">2</div>
-														<div class="home-blog-desc">
-															For decades, Home Innovation Research Labs has been polling builders nationwide about...
-														</div>
-														<div class="home-blog-readmore">
-															<a href="blog-detail.html">
-																Read More
-															</a>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="section pt-5 pb-5 bg-gray testimonials">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-sm-6">
 								<div class="section-title">Testimonials</div>
-								<div class="testimonials_wrapper row">
-									<div class="testimonials-list">
-										<div class="quote col-md-6 col-sm-6">
+								<div class="testimonials_wrapper">
+									<div class="testimonials-list-2">
+										<div class="quote">
 											<blockquote class="testimonials-text">
 												<p>
 													“Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_1.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_1.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Ms. Anna Terry</span> 
 												<span class="title">Founder/ CEO of Bulder Ltd.,</span>
 											</cite>
 										</div>
-										<div class="quote col-md-6 col-sm-6">
+										<div class="quote">
 											<blockquote class="testimonials-text">
 												<p>
 													“We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_2.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_2.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Mr. Frankie Kao</span> 
 												<span class="title">Founder/ CEO of ThemeMove</span>
 											</cite>
 										</div>
-										<div class="quote col-md-6 col-sm-6">
+										<div class="quote">
 											<blockquote class="testimonials-text">
 												<p>
 													“Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_1.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_1.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Ms. Anna Terry</span> 
 												<span class="title">Founder/ CEO of Bulder Ltd.,</span>
 											</cite>
 										</div>
-										<div class="quote col-md-6 col-sm-6">
+										<div class="quote">
 											<blockquote class="testimonials-text">
 												<p>
 													“We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="images/avatar/avatar_2.png" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{% static 'images/avatar/avatar_2.png' %}" class="avatar" alt="" /> 
 											<cite class="author">
 												<span>Mr. Frankie Kao</span> 
 												<span class="title">Founder/ CEO of ThemeMove</span>
 											</cite>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="section-title">Recent News</div>
+								<div class="row">
+									<ul class="news-list-2">
+										<li class="col-md-6 col-sm-12 mb-2">
+											<div class="news-entry-media">
+												<img src="{% static 'images/blog/blog_1.jpg' %}" alt="" />
+												<div class="news-entry-cover">
+													<div class="news-overlay home-blog-container"></div>
+													<div class="home-blog-popup">
+														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_1_l.jpg' %}">
+															<i class="fa fa-search"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="home-blog-content">
+												<div class="home-blog-title">
+													<a href="blog-detail.html">
+														House Review: Starter Homes
+													</a>
+												</div>
+												<div class="home-blog-date">July 31, 2015</div>
+												<div class="home-blog-comment">2</div>
+												<div class="home-blog-desc">
+													The startling fact that a growing percentage of the population simply cannot afford a...
+												</div>
+												<div class="home-blog-readmore">
+													<a href="blog-detail.html">
+														Read More
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="col-md-6 col-sm-12 mb-2">
+											<div class="news-entry-media">
+												<img src="{% static 'images/blog/blog_2.jpg' %}" alt="" />
+												<div class="news-entry-cover">
+													<div class="news-overlay home-blog-container"></div>
+													<div class="home-blog-popup">
+														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_2_l.jpg' %}">
+															<i class="fa fa-search"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="home-blog-content">
+												<div class="home-blog-title">
+													<a href="blog-detail.html">
+														9 Reasons To Go Modular
+													</a>
+												</div>
+												<div class="home-blog-date">July 31, 2015</div>
+												<div class="home-blog-comment">2</div>
+												<div class="home-blog-desc">
+													With today's technology, modular homes can be built in any style, and completion time...
+												</div>
+												<div class="home-blog-readmore">
+													<a href="blog-detail.html">
+														Read More
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="col-md-6 col-sm-12 mb-2">
+											<div class="news-entry-media">
+												<img src="{% static 'images/blog/blog_3.jpg' %}" alt="" />
+												<div class="news-entry-cover">
+													<div class="news-overlay home-blog-container"></div>
+													<div class="home-blog-popup">
+														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_3_l.jpg' %}">
+															<i class="fa fa-search"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="home-blog-content">
+												<div class="home-blog-title">
+													<a href="blog-detail.html">
+														The Brands Builders Buy Most
+													</a>
+												</div>
+												<div class="home-blog-date">July 31, 2015</div>
+												<div class="home-blog-comment">2</div>
+												<div class="home-blog-desc">
+													For decades, Home Innovation Research Labs has been polling builders nationwide about...
+												</div>
+												<div class="home-blog-readmore">
+													<a href="blog-detail.html">
+														Read More
+													</a>
+												</div>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -1609,7 +745,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_1.png" alt="" />
+															<img src="{% static 'images/client/client_1.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1622,7 +758,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_2.png" alt="" />
+															<img src="{% static 'images/client/client_2.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1635,7 +771,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_3.png" alt="" />
+															<img src="{% static 'images/client/client_3.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1648,7 +784,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_4.png" alt="" />
+															<img src="{% static 'images/client/client_4.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1661,7 +797,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_5.png" alt="" />
+															<img src="{% static 'images/client/client_5.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1674,7 +810,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_6.png" alt="" />
+															<img src="{% static 'images/client/client_6.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1687,7 +823,7 @@
 												<li class="col-md-2 col-sm-6">
 													<div class="client-media-cover-wrapper">
 														<div class="client-entry-media">
-															<img src="images/client/client_1.png" alt="" />
+															<img src="{% static 'images/client/client_1.png' %}" alt="" />
 														</div>
 														<div class="client-entry-cover">
 															<div class="client-overlay home-clients-container"></div>
@@ -1706,60 +842,7 @@
 					</div>
 				</div>
 			</div>
-			<footer class="site-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="widget">
-								<a href="./" class="footer-logo">
-									<img src="images/footer_logo.png" alt="Footer Logo"/>
-								</a>
-								Integrity for what we build, the purpose of why we build and the people who inspire us to build. It’s what Builder is built upon, and why our homes are as far from ordinary as the people who live in them.
-							</div>
-							<div class="social">
-								<div class="social-menu">
-									<ul class="menu">
-										<li><a href="http://facebook.com">Facebook</a></li>
-										<li><a href="http://plus.google.com">Google Plus</a></li>
-										<li><a href="http://twitter.com">Twitter</a></li>
-										<li><a href="http://vimeo.com">Vimeo</a></li>
-										<li><a href="http://youtube.com">Youtube</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="widget">
-								<h3 class="widget-title"><span>Information</span></h3>
-								<ul class="menu">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Overview</a></li>
-									<li><a href="#">Our Team</a></li>
-									<li><a href="#">Renovation</a></li>
-									<li><a href="#">Testimonials</a></li>
-									<li><a href="#">Who We Are</a></li>
-									<li><a href="#">Our Services</a></li>
-									<li><a href="#">Projects</a></li>
-									<li><a href="#">Careers</a></li>
-									<li><a href="#">Contact Us</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="widget">
-								<h3 class="widget-title"><span>HandyMan Office</span></h3>
-								<div class="textwidget">
-									<p><i class="fa fa-map-marker"></i> &nbsp; 14 Tottenham Road, London, England.</p>
-									<p><i class="fa fa-phone"></i>  &nbsp; (102) 6666 8888</p>
-									<p><i class="fa fa-envelope"></i>  &nbsp; <a href="mailto:email@domain.com">email@domain.com</a></p>
-									<p><i class="fa fa-fax"></i>  &nbsp; (102) 8888 9999</p>
-									<p><i class="fa fa-clock-o"></i>  &nbsp; Mon - Sat: 9:00 - 18:00</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+			{% include 'include/footer.html' %}
 			<div class="copyright">
 				<div class="container">
 					<div class="row middle">
@@ -1772,26 +855,26 @@
 		</div>
 		<a class="scrollup"><i class="fa fa-angle-up"></i></a>
 
-		<script type='text/javascript' src='js/jquery.min.js'></script>
-		<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
-		<script type='text/javascript' src='js/bootstrap.min.js'></script>
-		<script type='text/javascript' src='js/jquery.themepunch.tools.min.js'></script>
-		<script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
-		<script type='text/javascript' src='js/snap.min.js'></script>
-		<script type='text/javascript' src='js/owl.carousel.min.js'></script>
-		<script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
-		<script type='text/javascript' src='js/jquery.prettyPhoto.init.min.js'></script>
-		<script type='text/javascript' src='js/jQuery.headroom.min.js'></script>
-		<script type='text/javascript' src='js/headroom.min.js'></script>
-		<script type='text/javascript' src='js/script.js'></script>
+		<script type='text/javascript' src="{% static 'js/jquery.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery-migrate.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.themepunch.tools.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/snap.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.prettyPhoto.init.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jQuery.headroom.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/headroom.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/script.js' %}"></script>
 
-		<script type='text/javascript' src='js/extensions/revolution.extension.video.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.slideanims.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.actions.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.layeranimation.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.kenburn.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.navigation.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.migration.min.js'></script>
-		<script type='text/javascript' src='js/extensions/revolution.extension.parallax.min.js'></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.video.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.actions.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.navigation.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.migration.min.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/extensions/revolution.extension.parallax.min.js' %}"></script>
 	</body>
 </html>

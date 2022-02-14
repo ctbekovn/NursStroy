@@ -5,9 +5,9 @@ from apps.objects.models import Objects, ObjectsImages
 # Create your views here.
 def index(request):
     setting = Setting.objects.get(pk = 1)
-    objects = Objects.objects.all()
+    last_objects = Objects.objects.all().order_by('-created')[:4]
     context = {
         'setting' : setting, 
-        'objects' : objects
+        'last_objects' : last_objects
     }
-    return render(request, 'header-2.html', context)
+    return render(request, 'index.html', context)
