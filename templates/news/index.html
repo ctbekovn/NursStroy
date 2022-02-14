@@ -1,0 +1,72 @@
+{% extends 'grid.html' %}
+{% load static %}
+{% block content %}
+<div class="site-content">
+    <div class="big-title">
+        <div class="container">
+            <h1 class="entry-title">Все новости</h1>
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="tm_bread_crumb">
+                        <li class="top"><a href="./">Домой</a></li>
+                        <li class="sub tail current">Последние новости</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="news-content">
+                    <ul class="news-grid mb-3">
+                        {% for news in news_index %}
+                        <li class="col-md-4 col-sm-6 mb-3">
+                            <div class="news-entry-media">
+                                <img src="{{ news.image.url }}" alt="" />
+                                <div class="news-entry-cover">
+                                    <div class="news-overlay home-blog-container"></div>
+                                    <div class="home-blog-popup">
+                                        <a data-rel="prettyPhoto" href="{{ news.image.url }}">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-blog-content">
+                                <div class="home-blog-title">
+                                    <a href="blog-detail.html">
+                                       {{ news.title }}
+                                    </a>
+                                </div>
+                                <div class="home-blog-date">{{ news.created }}</div>
+                                <div class="home-blog-desc">
+                                    {{ news.description | truncatewords:20 }}
+                                </div>
+                                <div class="home-blog-readmore">
+                                    <a href="blog-detail.html">
+                                        Читать далее
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="pagination list-center">
+                    <a class="prev page-numbers" href="#">
+                        <i class="fa fa-long-arrow-left"></i>
+                    </a>
+                    <a class="page-numbers" href="#">1</a>
+                    <span class="page-numbers current">2</span>
+                    <a class="page-numbers" href="#">3</a>
+                    <a class="page-numbers" href="#">4</a>
+                    <a class="next page-numbers" href="#">
+                        <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

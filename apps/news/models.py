@@ -6,8 +6,8 @@ from ckeditor_uploader.fields import RichTextUploadingField
 # Create your models here.
 class News(models.Model):
     title = models.CharField(max_length=250)
+    description = models.TextField()    
     image = models.ImageField(upload_to = "news_image/")
-    detail = RichTextUploadingField()
     created = models.DateTimeField(auto_now_add=True)
 
     def str__(self):
