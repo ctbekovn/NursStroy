@@ -35,7 +35,7 @@
                             </div>
                             <div class="home-blog-content">
                                 <div class="home-blog-title">
-                                    <a href="blog-detail.html">
+                                    <a href="{% url 'news_detail' news.id %}">
                                        {{ news.title }}
                                     </a>
                                 </div>
@@ -44,7 +44,7 @@
                                     {{ news.description | truncatewords:20 }}
                                 </div>
                                 <div class="home-blog-readmore">
-                                    <a href="blog-detail.html">
+                                    <a href="{% url 'news_detail' news.id %}">
                                         Читать далее
                                     </a>
                                 </div>
