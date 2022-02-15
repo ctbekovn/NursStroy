@@ -142,13 +142,13 @@
 							<div class="col-sm-9">
 								<div class="custom_heading home_quote_txt">
 									<div class="call-for-action-text">
-										Looking for a quality constructor for your next project?
+										Посмотрите на наши объекты
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="home_quote_btn text-right">
-									<a href="#">GET A QUOTE</a>
+									<a href="{% url 'object_index' %}">Объекты</a>
 								</div>
 							</div>
 						</div>
@@ -268,7 +268,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="parallax-text">
-									Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.
+									Наше обещание как подрядчика состоит в том, чтобы привносить общественную ценность в каждый проект, предоставляя профессиональный опыт, исключительное обслуживание клиентов и качественное строительство.	
 								</div>
 							</div>
 						</div>
@@ -278,71 +278,38 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="section-title">Testimonials</div>
+								<div class="section-title">Отзывы  {{ reviews.all.count }} </div>
 								<div class="testimonials_wrapper">
 									<div class="testimonials-list-2">
+										{% for review in reviews %}
 										<div class="quote">
 											<blockquote class="testimonials-text">
 												<p>
-													“Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
+													{{ review.comment }}
 												</p>
 											</blockquote>
-											<img width="90" height="90" src="{% static 'images/avatar/avatar_1.png' %}" class="avatar" alt="" /> 
+											<img width="90" height="90" src="{{ review.image.url }}" class="avatar" alt="" style="border-radius: 100%;" /> 
 											<cite class="author">
-												<span>Ms. Anna Terry</span> 
-												<span class="title">Founder/ CEO of Bulder Ltd.,</span>
+												<span>{{ review.name }}</span> 
+												<span class="title">{{ review.position }}</span>
 											</cite>
 										</div>
-										<div class="quote">
-											<blockquote class="testimonials-text">
-												<p>
-													“We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
-												</p>
-											</blockquote>
-											<img width="90" height="90" src="{% static 'images/avatar/avatar_2.png' %}" class="avatar" alt="" /> 
-											<cite class="author">
-												<span>Mr. Frankie Kao</span> 
-												<span class="title">Founder/ CEO of ThemeMove</span>
-											</cite>
-										</div>
-										<div class="quote">
-											<blockquote class="testimonials-text">
-												<p>
-													“Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
-												</p>
-											</blockquote>
-											<img width="90" height="90" src="{% static 'images/avatar/avatar_1.png' %}" class="avatar" alt="" /> 
-											<cite class="author">
-												<span>Ms. Anna Terry</span> 
-												<span class="title">Founder/ CEO of Bulder Ltd.,</span>
-											</cite>
-										</div>
-										<div class="quote">
-											<blockquote class="testimonials-text">
-												<p>
-													“We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
-												</p>
-											</blockquote>
-											<img width="90" height="90" src="{% static 'images/avatar/avatar_2.png' %}" class="avatar" alt="" /> 
-											<cite class="author">
-												<span>Mr. Frankie Kao</span> 
-												<span class="title">Founder/ CEO of ThemeMove</span>
-											</cite>
-										</div>
+										{% endfor %}
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-6">
-								<div class="section-title">Recent News</div>
+								<div class="section-title">Последние новости</div>
 								<div class="row">
 									<ul class="news-list-2">
+										{% for news in resent_news %}
 										<li class="col-md-6 col-sm-12 mb-2">
 											<div class="news-entry-media">
-												<img src="{% static 'images/blog/blog_1.jpg' %}" alt="" />
+												<img src="{{ news.image.url }}" alt="" />
 												<div class="news-entry-cover">
 													<div class="news-overlay home-blog-container"></div>
 													<div class="home-blog-popup">
-														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_1_l.jpg' %}">
+														<a data-rel="prettyPhoto" href="{{ news.image.url }}">
 															<i class="fa fa-search"></i>
 														</a>
 													</div>
@@ -350,215 +317,30 @@
 											</div>
 											<div class="home-blog-content">
 												<div class="home-blog-title">
-													<a href="blog-detail.html">
-														House Review: Starter Homes
+													<a href="{% url 'news_detail' news.id %}">
+														{{news.title}}
 													</a>
 												</div>
-												<div class="home-blog-date">July 31, 2015</div>
+												<div class="home-blog-date">{{news.created}}</div>
 												<div class="home-blog-comment">2</div>
 												<div class="home-blog-desc">
-													The startling fact that a growing percentage of the population simply cannot afford a...
+													{{news.description | truncatewords:10}}
 												</div>
 												<div class="home-blog-readmore">
-													<a href="blog-detail.html">
-														Read More
+													<a href="{% url 'news_detail' news.id %}">
+														Читать далее
 													</a>
 												</div>
 											</div>
 										</li>
-										<li class="col-md-6 col-sm-12 mb-2">
-											<div class="news-entry-media">
-												<img src="{% static 'images/blog/blog_2.jpg' %}" alt="" />
-												<div class="news-entry-cover">
-													<div class="news-overlay home-blog-container"></div>
-													<div class="home-blog-popup">
-														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_2_l.jpg' %}">
-															<i class="fa fa-search"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="home-blog-content">
-												<div class="home-blog-title">
-													<a href="blog-detail.html">
-														9 Reasons To Go Modular
-													</a>
-												</div>
-												<div class="home-blog-date">July 31, 2015</div>
-												<div class="home-blog-comment">2</div>
-												<div class="home-blog-desc">
-													With today's technology, modular homes can be built in any style, and completion time...
-												</div>
-												<div class="home-blog-readmore">
-													<a href="blog-detail.html">
-														Read More
-													</a>
-												</div>
-											</div>
-										</li>
-										<li class="col-md-6 col-sm-12 mb-2">
-											<div class="news-entry-media">
-												<img src="{% static 'images/blog/blog_3.jpg' %}" alt="" />
-												<div class="news-entry-cover">
-													<div class="news-overlay home-blog-container"></div>
-													<div class="home-blog-popup">
-														<a data-rel="prettyPhoto" href="{% static 'images/blog/blog_3_l.jpg' %}">
-															<i class="fa fa-search"></i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="home-blog-content">
-												<div class="home-blog-title">
-													<a href="blog-detail.html">
-														The Brands Builders Buy Most
-													</a>
-												</div>
-												<div class="home-blog-date">July 31, 2015</div>
-												<div class="home-blog-comment">2</div>
-												<div class="home-blog-desc">
-													For decades, Home Innovation Research Labs has been polling builders nationwide about...
-												</div>
-												<div class="home-blog-readmore">
-													<a href="blog-detail.html">
-														Read More
-													</a>
-												</div>
-											</div>
-										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="section pt-5 pb-5">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="clients_btn">
-									<div class="section-title">Clients</div>
-									<div class="navigationbutton button-left clients_btn_left">
-										<i class="fa fa-angle-left"></i>
-									</div>
-									<div class="navigationbutton button-right clients_btn_right">
-										<i class="fa fa-angle-right"></i>
-									</div>
-								</div>
-								<div class="myportfolio-container minimal-light">
-									<div class="row">
-										<div class="slider-wrapper">
-											<ul class="client-list">
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_1.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 01
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_2.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 02
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_3.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 03
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_4.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 04
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_5.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 05
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_6.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 06
-															</div>
-														</div>
-													</div>
-												</li>
-												<li class="col-md-2 col-sm-6">
-													<div class="client-media-cover-wrapper">
-														<div class="client-entry-media">
-															<img src="{% static 'images/client/client_1.png' %}" alt="" />
-														</div>
-														<div class="client-entry-cover">
-															<div class="client-overlay home-clients-container"></div>
-															<div class="home-clients-title">
-																Client 07
-															</div>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			{% include 'include/footer.html' %}
-			<div class="copyright">
-				<div class="container">
-					<div class="row middle">
-						<div class="col-md-12 end-md end-lg center">
-							© Copyrights 2016 TK-Themes, Inc. All rights reserved.
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		<a class="scrollup"><i class="fa fa-angle-up"></i></a>
 
